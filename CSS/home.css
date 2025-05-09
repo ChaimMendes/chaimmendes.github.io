@@ -6,8 +6,26 @@
 body{
     background-color: #151515;
 }
+
+.logo{
+    font-family: "Cal Sans", sans-serif;
+}
 .cal-sans-regular {
   font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jetbrains-mono {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
