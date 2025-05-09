@@ -1,10 +1,13 @@
 *{
-    color: aqua;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-      margin: 0;
+    color: #dadada;
+    font-family: "Montserrat", "JetBrains Mono", sans-serif;
+    margin: 0;
     padding: 0;
 }
 
+h1{
+  color: #FFFFFF;
+}
 body{
     background-color: #151515;
 }
@@ -18,8 +21,8 @@ header{
 
 .logo{
     font-family: "Cal Sans", sans-serif;
-    width: 50%;
-    max-width: 200px;
+    width: 500px;
+    max-width: 70%;
 }
 
 /* Font Infomation */
