@@ -14,7 +14,10 @@ header{
 .logo{
     font-family: "Cal Sans", sans-serif;
 }
-.cal-sans-regular {
+
+/* Font Infomation */
+
+/* .cal-sans-regular {
   font-family: "Cal Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -32,4 +35,4 @@ header{
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-}
+} */
