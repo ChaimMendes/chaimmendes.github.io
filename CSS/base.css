@@ -1,0 +1,69 @@
+* {
+  color: #dadada;
+  font-family: "Montserrat", "JetBrains Mono", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+h1 {
+  color: #FFFFFF;
+}
+
+body {
+  background-color: #151515;
+}
+
+header {
+  position: fixed;
+  object-position: top center;
+  background-color: rgb(10, 10, 10);
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  width: 100%;
+  object-fit: cover;
+}
+
+.logo {
+  font-family: "Cal Sans", sans-serif;
+  width: 500px;
+  max-width: 70%;
+}
+.part1{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+video {
+  position: relative;
+  filter: brightness(50%);
+  object-fit: cover;
+  object-position: center; 
+  z-index: -10;
+  height: 100vh;
+  min-width: 100%;
+}
+
+/* Font Infomation */
+
+/* .cal-sans-regular {
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jetbrains-mono {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+} */
