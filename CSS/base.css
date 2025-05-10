@@ -1,3 +1,4 @@
+/* Basic Standard theme set */
 * {
   color: #dadada;
   font-family: "Montserrat", "JetBrains Mono", sans-serif;
@@ -14,6 +15,10 @@ body {
   background-color: #151515;
 }
 
+
+
+
+/* Header Format */
 header {
   position: fixed;
   object-position: top center;
@@ -30,21 +35,7 @@ header {
   width: 500px;
   max-width: 70%;
 }
-.part1{
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100vh;
-}
-video {
-  position: relative;
-  filter: brightness(50%);
-  object-fit: cover;
-  object-position: center; 
-  z-index: -10;
-  height: 100vh;
-  min-width: 100%;
-}
+
 
 /* Font Infomation */
 
