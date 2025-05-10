@@ -13,3 +13,13 @@ video.BgMainVideo {
   height: 100vh;
   min-width: 100%;
 }
+.dynamic-txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    z-index: 30;
+    background-color: #00000000;
+    position: absolute;
+}
