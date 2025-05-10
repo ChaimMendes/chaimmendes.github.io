@@ -22,4 +22,19 @@ video.BgMainVideo {
     z-index: 30;
     background-color: #00000000;
     position: absolute;
+    font-size: 200%;
+    font-family: "JetBrains Mono", "Cal Sans", sans-serif;
+    object-fit: cover;
+    white-space: nowrap;
+}
+.FirstLetterOfDynamicText{
+    font-size: 250%;
+    margin-bottom: 1vh;
+    font-family: "JetBrains Mono", "Cal Sans", sans-serif;
+    color: #8FFE09;
+}
+.dynamic-txt-font{
+    font-size: 200%;
+    font-family: "JetBrains Mono", "Cal Sans", sans-serif;
+    color: #8FFE09;
 }
