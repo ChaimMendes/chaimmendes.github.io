@@ -46,7 +46,13 @@ header {
   cursor: pointer;
 }
 
-
+.close-button {
+  background: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
 /* #9B00FF */
 /* #8FFE09 */
 /* #B0FF00 */
