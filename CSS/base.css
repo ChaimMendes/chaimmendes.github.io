@@ -46,12 +46,30 @@ header {
   cursor: pointer;
 }
 
+.NavContainer{
+  background-color: #9B00FF;
+  height: 100vh;
+  width: 70%;
+  position: fixed;
+  top: 0;
+  right: 30%;
+  z-index: 20;
+  translate: -700% 0;
+}
+
 .close-button {
   background: none;
   position: absolute;
   top: 5px;
   right: 5px;
   cursor: pointer;
+}
+
+.NavContainer nav ul{
+  list-style: none;
+  color: #FFFFFF;
+  align-items: center;
+  width: 60%;
 }
 /* #9B00FF */
 /* #8FFE09 */
