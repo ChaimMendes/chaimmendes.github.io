@@ -38,6 +38,20 @@ header {
   max-width: 70%;
 }
 
+.menu-button {
+  background: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+
+/* #9B00FF */
+/* #8FFE09 */
+/* #B0FF00 */
+/* #A4C639 */
+
 
 /* Font Infomation */
 
