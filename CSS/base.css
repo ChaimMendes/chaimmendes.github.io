@@ -46,12 +46,57 @@ header {
   cursor: pointer;
 }
 
-.close-button {
+.NavContainer{
+  background-color: #711aaa;
+  height: 100vh;
+  width: 70%;
+  position: fixed;
+  top: 0;
+  right: 30%;
+  z-index: 20;
+  /* translate: -100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.close-button{
   background: none;
   position: absolute;
   top: 5px;
   right: 5px;
   cursor: pointer;
+  z-index: 21;
+  color: #FFFFFF;
+}
+
+.NavContainer nav ul{
+  list-style: none;
+  width: 60%;
+  margin: 20px;
+  font-size: 22px;
+}
+.NavContainer nav ul li b{
+  padding: 0px, 10px;
+  color: #FFFFFF;
+  font-weight: 400;
+  transition: background-color 0.3s ease, font-weight 0.3s ease;
+}
+.NavContainer nav ul li b:hover{
+  color: #84ed03;
+  font-weight: 600;
+}
+
+.close-button img{
+  background: none;
+  z-index: 22;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(203deg) brightness(103%) contrast(102%);
+  transition: filter 0.3s ease;
+}
+
+.close-button img:hover{
+  filter: invert(75%) sepia(93%) saturate(1849%) hue-rotate(37deg) brightness(102%) contrast(108%);
 }
 /* #9B00FF */
 /* #8FFE09 */
