@@ -91,12 +91,12 @@ header {
 .close-button img{
   background: none;
   z-index: 22;
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(203deg) brightness(103%) contrast(102%);
-  transition: filter 0.3s ease;
+  color: #FFFFFF;
+  transition: color 0.3s ease;
 }
 
 .close-button img:hover{
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(203deg) brightness(103%) contrast(102%) drop-shadow(0 0 5px #84ed03);
+  color: #84ed03;
 }
 /* #9B00FF */
 /* #8FFE09 */
