@@ -22,7 +22,7 @@ video.BgMainVideo {
     z-index: 5;
     background-color: #00000000;
     position: absolute;
-    font-size: 200%;
+    font-size: 6vw;
     font-family: "JetBrains Mono", "Cal Sans", sans-serif;
     object-fit: cover;
     white-space: nowrap;
@@ -41,7 +41,36 @@ video.BgMainVideo {
 
 
 
-  
+.hiText{
+  font-family: "Cal Sans", sans-serif;
+  font-size: 200%;
+  font-weight: 300;
+  color: #a113ff;
+  position: relative;
+  margin-top: 10px;
+  width: auto;
+  transform: translateX(-80%);
+  transition: transform 1s ease-in-out;
+}
+.hiText.show{
+  transform: translateX(0);
+}
+.AboutIntro hr {
+  border: none;
+  border-top: 5px solid #8FFE09;
+  margin: 10px 0;
+  width: 10%;
+  transition: width 1s ease-in-out;
+  position: relative;
+  display: block;
+  margin-left: auto;
+}
+.AboutIntro hr.show {
+  width: 100%;
+  right: 0;
+}
+
+
 
 /* #9B00FF */
 /* #8FFE09 */

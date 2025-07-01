@@ -40,3 +40,18 @@ function typeMessage(){
 }
 element.textContent = "";
 typeMessage()
+
+const popoutFont = document.querySelectorAll(".PositionResponsive");
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show")
+        } else{
+            entry.target.classList.remove("show")
+        }
+    })
+}
+)
+popoutFont.forEach(el =>
+    observer.observe(el)
+)
