@@ -71,15 +71,6 @@ video.BgMainVideo {
   right: 0;
 }
 
-
-.PortfolioCarrouselContainer{
-  padding: 0;
-  height: 80vh;
-  position: relative;
-  display: flex;
-  overflow: hidden;
-  align-items: center;
-}
 .CarrouselButton {
   background-color: #151515;
   color: #8FFE09;
@@ -92,13 +83,50 @@ video.BgMainVideo {
   transform: translateY(-50%); /* ✅ this is the missing line */
 }
 
-.CarrouselPrev{
+.CarrouselNext{
   right: 0;
 }
-.CarrouselNext{
+.CarrouselPrev{
   left: 0;
 }
 
+
+.PortfolioCarrouselContainer{
+  padding: 0;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+}
+
+.PortfolioCarrouselItems{
+  position: relative;
+  width: 90vw;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+}
+.PortfolioCarrouselItems {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(.77,0,.18,1);
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+}
+.PortfolioCarrouselItem {
+  min-width: 100%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease-in-out;
+}
+.PortfolioCarrouselItem.one{
+  transform: translateX(100%);
+}
 /* #9B00FF */
 /* #8FFE09 */
 /* #151515 */
