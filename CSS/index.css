@@ -1,47 +1,51 @@
-.part1{
+.part1 {
   position: relative;
   overflow: hidden;
   width: 100%;
   height: 100vh;
 }
+
 video.BgMainVideo {
   position: relative;
   filter: brightness(50%);
   object-fit: cover;
-  object-position: center; 
+  object-position: center;
   z-index: -10;
   height: 100vh;
   min-width: 100%;
 }
-.dynamic-txt{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    z-index: 5;
-    background-color: #00000000;
-    position: absolute;
-    font-size: 6vw;
-    font-family: "JetBrains Mono", "Cal Sans", sans-serif;
-    object-fit: cover;
-    white-space: nowrap;
+
+.dynamic-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  z-index: 5;
+  background-color: #00000000;
+  position: absolute;
+  font-size: 6vw;
+  font-family: "JetBrains Mono", "Cal Sans", sans-serif;
+  object-fit: cover;
+  white-space: nowrap;
 }
-.FirstLetterOfDynamicText{
-    font-size: 250%;
-    margin-bottom: 1vh;
-    font-family: "JetBrains Mono", "Cal Sans", sans-serif;
-    color: #8FFE09;
+
+.FirstLetterOfDynamicText {
+  font-size: 250%;
+  margin-bottom: 1vh;
+  font-family: "JetBrains Mono", "Cal Sans", sans-serif;
+  color: #8FFE09;
 }
-.dynamic-txt-font{
-    font-size: 200%;
-    font-family: "JetBrains Mono", "Cal Sans", sans-serif;
-    color: #8FFE09;
+
+.dynamic-txt-font {
+  font-size: 200%;
+  font-family: "JetBrains Mono", "Cal Sans", sans-serif;
+  color: #8FFE09;
 }
 
 
 
-.hiText{
+.hiText {
   font-family: "Cal Sans", sans-serif;
   font-size: 200%;
   font-weight: 300;
@@ -53,9 +57,11 @@ video.BgMainVideo {
   transform: translateX(-80%);
   transition: transform 1s ease-in-out;
 }
-.hiText.show{
+
+.hiText.show {
   transform: translateX(0);
 }
+
 .AboutIntro hr {
   border: none;
   border-top: 5px solid #8FFE09;
@@ -66,6 +72,7 @@ video.BgMainVideo {
   display: block;
   margin-left: auto;
 }
+
 .AboutIntro hr.show {
   width: 100%;
   right: 0;
@@ -80,42 +87,43 @@ video.BgMainVideo {
   border-radius: 10%;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%); /* ✅ this is the missing line */
+  transform: translateY(-50%);
+  /* ✅ this is the missing line */
 }
 
-.CarrouselNext{
+.CarrouselNext {
   right: 0;
 }
-.CarrouselPrev{
+
+.CarrouselPrev {
   left: 0;
 }
 
 
-.PortfolioCarrouselContainer{
+.PortfolioCarrouselContainer {
   padding: 0;
   height: 80vh;
   position: relative;
   display: flex;
   overflow: hidden;
   align-items: center;
+  justify-content: center;
 }
 
-.PortfolioCarrouselItems{
+.PortfolioCarrouselItems {
   position: relative;
   width: 90vw;
-  display: flex;
   overflow: hidden;
   align-items: center;
-}
-.PortfolioCarrouselItems {
   display: flex;
-  transition: transform 0.5s cubic-bezier(.77,0,.18,1);
+  height: 90%;
+  flex-direction: row;
+  align-self: center;
+}
+
+.PortfolioCarrouselItem {
   width: 100%;
   height: 100%;
-  flex-direction: row;
-}
-.PortfolioCarrouselItem {
-  min-width: 100%;
   box-sizing: border-box;
   flex-shrink: 0;
   display: flex;
@@ -123,10 +131,21 @@ video.BgMainVideo {
   align-items: center;
   justify-content: center;
   transition: transform 0.5s ease-in-out;
+  align-self: center;
+  background-color: #0e0e0e;
+  border-radius: 40px;
 }
-.PortfolioCarrouselItem.one{
+
+@media screen and (orientation: portrait) {
+  .PortfolioCarrouselItem {
+    flex-direction: column;
+  }
+}
+
+.PortfolioCarrouselItem.one {
   transform: translateX(100%);
 }
+
 /* #9B00FF */
 /* #8FFE09 */
 /* #151515 */
