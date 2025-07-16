@@ -1,0 +1,140 @@
+/* Basic Standard theme set */
+* {
+  color: #dadada;
+  font-family: "Montserrat", "JetBrains Mono", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+h1 {
+  color: #FFFFFF;
+}
+
+body {
+  background-color: #151515;
+}
+
+p{
+  padding: 10px;
+}
+
+
+/* Header Format */
+header {
+  position: fixed;
+  object-position: top center;
+  background-color: rgb(10, 10, 10);
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  width: 100%;
+  object-fit: cover;
+  height: 10%;
+  display: flex;
+  align-items: center; 
+}
+
+.logo {
+  font-family: "Cal Sans", sans-serif;
+  width: 500px;
+  max-width: 70%;
+  font-size: auto;
+}
+
+.menu-button {
+  background: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  rotate: 0deg;
+  transition: rotate 0.6s ease;
+}
+.menu-button:hover {
+  rotate: 180deg;
+}
+
+.NavContainer{
+  background-color: #711aaa;
+  height: 100vh;
+  width: 70%;
+  position: fixed;
+  top: 0;
+  right: 30%;
+  z-index: 20;
+  translate: -100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  transition: translate 0.6s ease;
+}
+.menuOpen{
+  translate: 0;
+}
+
+.NavContainer nav ul{
+  list-style: none;
+  width: 60%;
+  margin: 20px;
+  font-size: 22px;
+}
+.NavContainer nav ul li b{
+  padding: 0px, 10px;
+  color: #FFFFFF;
+  font-weight: 400;
+  transition: background-color 0.3s ease, font-weight 0.3s ease;
+}
+.NavContainer nav ul li b:hover{
+  color: #84ed03;
+  font-weight: 600;
+}
+
+.close-button{
+  background: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  z-index: 21;
+  color: #FFFFFF;
+}
+
+.close-button img{
+  background: none;
+  z-index: 22;
+  rotate: 0deg;
+  transition: rotate 0.6s ease;
+}
+
+.close-button img:hover{
+  rotate: 180deg;
+}
+/* #9B00FF */
+/* #8FFE09 */
+/* #B0FF00 */
+/* #A4C639 */
+
+
+/* Font Infomation */
+
+/* .cal-sans-regular {
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jetbrains-mono {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+} */
