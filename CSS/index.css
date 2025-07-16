@@ -165,7 +165,7 @@ video.BgMainVideo {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  font-size: 600%;
+  font-size: 650%;
 }
 
 @media screen and (orientation: portrait) {
@@ -178,8 +178,8 @@ video.BgMainVideo {
     align-items: center;
     justify-content: center;
   }
-  .PortfolioCarrouselItem .one H2 {
-    font-size: 250%;
+  .CarrouselTitle {
+    font-size: 300%;
   }
   .PortfolioCarrouselItem .two {
     height: 60vh;
