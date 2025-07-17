@@ -121,13 +121,14 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 150px;
+  min-height: 150px;
   /* adjust as needed */
 }
 
 .footer p {
   color: #ffffff;
   font-family: "JetBrains Mono", monospace;
+  text-align: center;
 }
 
 .quick-links {
@@ -166,6 +167,24 @@ header {
   background-color: #84ed03;
 }
 
+.quick-links p {
+  display: block;
+}
+
+@media(orientation: portrait) {
+  .NavContainer {
+    width: 100%;
+  }
+
+  .quick-links {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .quick-links p {
+    display: none;
+  }
+}
 
 /* .nothing{
   color: #9B00FF;
