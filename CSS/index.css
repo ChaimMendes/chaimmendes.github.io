@@ -239,13 +239,15 @@ hr.show {
 .Portfolios{
   padding: 2%;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .Portfolios video{
   height: 100%;
 }
 .PortfolioVideoContainer{
   position: relative;
-  width: 90vw;
+  width: 100%;
   height: 80vh;
   display: flex;
   align-items: center;
