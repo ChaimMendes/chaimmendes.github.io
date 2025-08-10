@@ -203,16 +203,21 @@ hr.show {
   background-color: #090909;
   border-radius: 20px;
 }
-
+.me-card p {
+  text-align: justify;
+  padding: 20px;
+  height: 100%;
+}
 .me-card img {
   width: 60%;
   margin: 20px;
+  border-radius: 20px;
 }
 
 .me hr {
-  margin: 1vh auto;
+  margin: 2vh auto;
   border-top: 4vh solid #9B00FF;
-  transition: width 1.3s ease-in-out;
+  transition: width 3s ease-in-out;
 }
 
 .me .hiText {
@@ -229,6 +234,24 @@ hr.show {
     width: 80%;
   }
 
+}
+
+.Portfolios{
+  padding: 2%;
+  position: relative;
+}
+.Portfolios video{
+  height: 100%;
+}
+.PortfolioVideoContainer{
+  position: relative;
+  width: 90vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
 }
 /* #9B00FF */
 /* #8FFE09 */
