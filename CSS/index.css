@@ -198,22 +198,27 @@ hr.show {
 .me-card {
   margin: auto;
   width: calc(100vw - 100px);
+  height: 80vh;
   display: flex;
   align-items: center;
   background-color: #090909;
   border-radius: 20px;
+  position: relative;
 }
 .me-card p {
   text-align: justify;
   padding: 20px;
-  height: 100%;
 }
-.me-card img {
-  width: 60%;
+.me-card .meImage {
   margin: 20px;
   border-radius: 20px;
+  display: block;
+  position: relative;
 }
-
+.meImage img {
+  width: 60vw;
+  border-radius: 20px;
+}
 .me hr {
   margin: 2vh auto;
   border-top: 4vh solid #9B00FF;
@@ -229,9 +234,10 @@ hr.show {
     margin: 5px;
     width: calc(100vw - 5px);
     justify-content: center;
+    align-items: center;
   }
   .me-card img{
-    width: 80%;
+    width: 90vh;
   }
 
 }
@@ -245,6 +251,10 @@ hr.show {
 .Portfolios video{
   height: 100%;
 }
+.Portfolios h2{
+  color: #8FFE09;
+  padding: 10px;
+}
 .PortfolioVideoContainer{
   position: relative;
   width: 100%;
@@ -254,6 +264,35 @@ hr.show {
   justify-content: center;
   border-radius: 20px;
   overflow: hidden;
+}
+.MadeInBlenderSign{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin: 20px;
+}
+.MadeInBlenderSign h3{
+  font-size: 40px;
+}
+.MadeInBlenderSign img{
+  height: 70px;
+  width: auto;
+}
+@media (max-width: 470px) {
+  .MadeInBlenderSign h3 {
+    font-size: 30px;
+  }
+  .MadeInBlenderSign img {
+    height: 40px;
+  }
+  .meImage{
+    width: 90vw;
+    overflow: hidden;
+  }
+  
 }
 /* #9B00FF */
 /* #8FFE09 */
