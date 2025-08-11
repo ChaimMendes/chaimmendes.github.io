@@ -198,7 +198,7 @@ hr.show {
 .me-card {
   margin: auto;
   width: calc(100vw - 100px);
-  height: 80vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   background-color: #090909;
@@ -211,18 +211,28 @@ hr.show {
   padding: 20px;
 }
 
-.me-card .meImage {
-  margin: 20px;
-  border-radius: 20px;
-  display: block;
+.me-card {
+  flex-direction: column;
+  margin: auto;
+  width: calc(90vw - 0px);
+  justify-content: center;
+  align-items: center;
+}
+
+.me-card img {
+  width: 90%;
+  margin: auto;
+}
+.meImage{
+  display: flex;
   position: relative;
-}
-
-.meImage img {
-  width: 60vw;
+  margin: auto;
+  width: 90vw;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   border-radius: 20px;
 }
-
 .me hr {
   margin: 2vh auto;
   border-top: 4vh solid #9B00FF;
@@ -245,7 +255,6 @@ hr.show {
   .me-card img {
     width: 90vh;
   }
-
 }
 
 .Portfolios {
@@ -297,15 +306,11 @@ hr.show {
 @media (max-width: 470px) {
   .MadeInBlenderSign h3 {
     font-size: 30px;
+    white-space: nowrap;
   }
 
   .MadeInBlenderSign img {
     height: 40px;
-  }
-
-  .meImage {
-    width: 90vw;
-    overflow: hidden;
   }
 
 }
