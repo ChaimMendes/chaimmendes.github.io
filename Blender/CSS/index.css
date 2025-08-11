@@ -1,6 +1,9 @@
+/* Part One ----------------------------------------------------------------- */
+
 .part1 {
   position: relative;
-  width: 100%;
+  width: 100vw;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,4 +21,51 @@
 }
 .part1 h2 {
     font-family: "JetBrains Mono", monospace;;
+}
+
+/* Part 2 ------------------------------------------------------ */
+.part2 {
+  width: 90vw;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+}
+.part2 h2 {
+  font-family: "JetBrains Mono", monospace;
+  color: #8FFE09;
+}
+.PortfolioPeices{
+  background-color: #101010;
+  width: 95%;
+  border-radius: 20px;
+  margin: auto;
+  display: block;
+}
+
+.PortfolioPeices h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #a41dff;
+  text-align: center;
+  margin: 20px;
+  display: inline-block;
+}
+
+.PortfolioPeices img{
+  width: 95%;
+  margin: 2.5%;
+  display: block;
+  border-radius: 20px;
+  border: 2px solid #8FFE09;
+}
+.PortfolioPeicesCarrousel{
+  display: flex;
+  flex-direction: row;
+}
+
+.nothing{
+  color: #9B00FF;
+  color: #8FFE09;
 }

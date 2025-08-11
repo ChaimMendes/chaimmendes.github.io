@@ -251,7 +251,9 @@ hr.show {
     justify-content: center;
     align-items: center;
   }
-
+  .meImage{
+    justify-content: left;
+  }
   .me-card img {
     width: 90vh;
   }
