@@ -91,7 +91,6 @@ hr.show {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  /* ✅ this is the missing line */
 }
 
 .CarrouselNext {
