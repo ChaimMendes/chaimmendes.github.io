@@ -70,7 +70,6 @@ header {
 }
 
 .logo {
-  font-family: "Cal Sans", sans-serif;
   font-family: "JetBrains Mono", monospace;
   max-width: 90%;
   font-size: auto;
@@ -155,6 +154,15 @@ header {
 .close-button img:hover {
   rotate: 180deg;
 }
+.navButton {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navButton img{
+  height: 5vh;
+}
 
 /* Footer */
 .footer {
@@ -225,7 +233,9 @@ header {
   .NavContainer {
     width: 100%;
   }
-
+  .menuOpen {
+    translate: 30vw;
+  }
   .quick-links {
     flex-direction: column;
     gap: 0px;
