@@ -47,6 +47,8 @@
   border-radius: 20px;
   margin: auto;
   display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .PortfolioPeices h3 {
@@ -56,10 +58,12 @@
   margin: 20px;
   display: inline-block;
 }
-
+.PortfolioPeices p{
+  margin: 20px;
+}
 .PortfolioPeices img {
   width: 95%;
-  margin: 2.5%;
+  margin: calc(2.5%);
   display: block;
   border-radius: 20px;
   border: 2px solid #8FFE09;
@@ -71,6 +75,7 @@
   position: relative;
   display: flex;
   flex-direction: row;
+  overflow: hidden;
 }
 
 .CarrouselButtons {
@@ -93,9 +98,11 @@
 }
 
 .CarrouselNext {
-  right: 0px;
+  right: 10px;
 }
-
+.CarrouselPrev {
+  left: 10px;
+}
 .nothing {
   color: #9B00FF;
   color: #8FFE09;
