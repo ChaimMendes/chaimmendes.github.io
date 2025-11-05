@@ -63,21 +63,22 @@ header {
 
 .logo-container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
   gap: 0px;
   flex-direction: row;
+  padding-left: 1%;
 }
 
 .logo {
   font-family: "JetBrains Mono", monospace;
   max-width: 90%;
-  font-size: auto;
+  font-size: 145%;
   text-wrap: nowrap;
 }
 
 .logo.one {
-  font-size: 2.5rem;
+  font-size: 190%;
 }
 
 .menu-button {
@@ -177,7 +178,7 @@ header {
 .HeaderSpacer{
   position: relative;
   display: block;
-  width: 100%;
+  width: 100vw;
   height: 10vh;
 }
 
