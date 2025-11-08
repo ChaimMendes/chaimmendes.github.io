@@ -1,0 +1,5 @@
+title: "My Portfolio"
+description: "Design and art portfolio"
+collections:
+portfolio:
+output: true   # make individual pages public
