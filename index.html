@@ -2,10 +2,104 @@
 layout: default
 title: Chaim Mendes Portfolio
 ---
-<section>
-    <H1>Good Day</H1>
-    <H1>Good Day</H1>
-    <H1>Good Day</H1>
-    <H1>Good Day</H1>
-    <H1>Good Day</H1>
-</section>
+<head>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+
+<div class="part1">
+    <div class="dynamic-txt">
+        <h1 class="dynamic-txt-font, FirstLetterOfDynamicText" id="dynamic-txt-Capital">
+            >
+        </h1>
+        <h1 class="dynamic-txt-font" id="dynamic-txt">evoloping</h1>
+    </div>
+
+    <video autoplay loop muted playsinline class="BgMainVideo">
+        <source src="Media\Loop.mp4" />
+    </video>
+</div>
+<!-- About Intro -->
+<div class="AboutIntro">
+    <h2 class="hiText PositionResponsive" id="LslideOut">Hi! I'm Chaim Mendes!</h2>
+    <hr class="PositionResponsive" />
+    <!-- Carrousel -->
+    <div class="PortfolioCarrouselContainer">
+        <div class="PortfolioCarrouselItems">
+            <!-- Blender Carrousel Item -->
+            <div class="PortfolioCarrouselItem">
+                <div class="one">
+                    <img src="Media\Saber0003.png" alt="Oops, we lost this image!(Try Reloading)" />
+                </div>
+                <div class="two">
+                    <p class="text">
+                        I create 3D models and render animations in Blender. View my <a href="/Blender/">Blender
+                            Portfolio↗</a>.
+                    </p>
+                </div>
+                <h2 class="CarrouselTitle">Blender</h2>
+            </div>
+            <!-- Web Carrousel item -->
+            <div class="PortfolioCarrouselItem">
+                <div class="one">
+                    <img src="Media\WebDev.png" alt="Oops, we lost this image!(Try Reloading)" />
+                </div>
+                <div class="two">
+                    <p class="text">
+                        This website is built using HTML, CSS, and JavaScript, from scratch.
+                    </p>
+                </div>
+                <h2 class="CarrouselTitle">Web Dev</h2>
+            </div>
+        </div>
+        <button class="CarrouselButton CarrouselPrev">&#9668;</button>
+        <button class="CarrouselButton CarrouselNext">&#9658;</button>
+    </div>
+</div>
+<!-- Me -->
+<div class="me">
+    <hr class="PositionResponsive" />
+    <hr class="PositionResponsive" />
+    <hr class="PositionResponsive" />
+    <h2 class="hiText PositionResponsive" id="LslideOut">About Me</h2>
+    <div class="me-card">
+        <div>
+            <p>
+                <b>I'm Chaim Mendes, a 3D artist</b> and occasionally a web developer based in India. I create 3D models
+                and
+                animations using Blender, and
+                build websites. My passion lies in creating visually stunning and engaging experiences.
+                Whether it's through 3D art or web visuals, I bring creativity and innovation through minute details to
+                every
+                project I undertake.
+            </p>
+        </div>
+        <div class="meImage">
+            <img src="Media\IcePlanetCompressedZoomed.png" alt="Oops, we lost this image!(Try Reloading)">
+            <div class="MadeInBlenderSign">
+                <h3>Made in</h3>
+                <img src="Media/BlenderLogo.png" alt="">
+            </div>
+        </div>
+        <div>
+            <p>
+                I am also a computer geek, I love to tinker with computers and learn
+                about new technologies(not to mention criticize gimmicky ones).
+            </p>
+        </div>
+    </div>
+</div>
+<!-- Portfolio -->
+<div class="Portfolios">
+    <H2>Visit my <a href="/Blender/">BlenderPortfolio↗</a></H2>
+    <div class="PortfolioVideoContainer">
+        <video autoplay loop muted playsinline class="BgMainVideo">
+            <source src="Media/MechanicalVirusLikeInsectMadeInBlender.mp4" />
+        </video>
+        <div class="MadeInBlenderSign">
+            <h3>Made in</h3>
+            <img src="Media/BlenderLogo.png" alt="">
+        </div>
+    </div>
+</div>
+
+<script src="Scripts/script.js"></script>
