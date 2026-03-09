@@ -1,26 +1,178 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  /* Highlight Colors */
+  --purple: #9B00FF;
+  --green: #8FFE09;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Background Colors */
+  --bg-dark: #151515;
+  --bg-darker: #0f0f0f;
+  --bg-black: #000000;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Text Colors */
+  --white: #FFFFFF;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-black);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: var(--white);
+  font-family: var(--font-main);
+}
+
+.headerFont {
+  font-family: var(--font-headers);
+}
+/* Navigation Bar ------------------------------------------------- */
+nav {
+  background: linear-gradient(to bottom, var(--bg-black), #00000000);
+  backdrop-filter: blur(1px);
+  width: 100%;
+  position: fixed;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  transition: height 0.5s ease-in-out;
+  will-change: height;
+  z-index: 10;
+}
+
+.navopen {
+  height: 50vh;
+}
+
+.navMain {
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+.logo h1 {
+  font-weight: 100;
+  font-size: 3rem;
+}
+
+.logo h1 b {
+  font-weight: 100;
+  font-size: 3.5rem;
+}
+
+@media (width < 500px) {
+  .logo h1 {
+    font-size: 7vw;
+  }
+
+  .logo h1 b {
+    font-size: 9vw;
+  }
+}
+
+/* Navbar - Button */
+.navMain button {
+  background: none;
+  background-image: url("/Media/MenuIcon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+  width: 6vh;
+  height: 6vh;
+  scale: 1;
+  transform: rotate(0deg);
+  transition: transform 0.6s ease-in-out, scale 0.6s ease-in-out;
+}
+
+.navMain .menuopen {
+  background-image: url("/Media/CloseIcon.svg");
+}
+
+.navMain button:hover {
+  scale: 1.3;
+  transform: rotate(180deg);
+}
+
+.hiddenMenu {
+  display: none;
+  margin: auto;
+}
+
+.navopen .hiddenMenu {
+  display: block;
+  height: 0px;
+}
+
+.hiddenMenu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.hiddenMenu ul li a {
+  font-size: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: var(--font-headers);
+  font-weight: 100;
+  transition: all 0.5s ease-in-out;
+}
+
+.hiddenMenu ul li a:hover {
+  font-weight: 200;
+  color: var(--purple);
+  font-size: 1.5rem;
+}
+
+/* Footer ------------------------------------------------------------------- */
+
+footer {
+  background: linear-gradient(to top, var(--purple), var(--bg-black));
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;;
+}
+footer .stamp {
+  font-weight: 200;
+  font-size: 5rem;
+  font-family: var(--font-headers);
+}
+
+footer p{
+  padding: 20px;
+}
+
+/* Footer links */
+.footerLinks {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.footerLinks ul li a {
+  font-size: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: var(--font-headers);
+  font-weight: 100;
+  transition: all 0.5s ease-in-out;
+}
+
+.footerLinks ul li a:hover {
+  font-weight: 200;
+  color: var(--green);
+  font-size: 1.5rem;
 }
