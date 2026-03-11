@@ -1,84 +1,76 @@
 'use client';
-import styles from './page.module.css';
-
 import { useRef, useLayoutEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-// 1. Register the plugin
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Home() {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const sectionRef = useRef<HTMLDivElement>(null);
+export default function SmoothScroll() {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const contextRef = useRef<CanvasRenderingContext2D | null>(null);
+
+  // Configuration
+  const frameCount = 100; // Total number of images you have
+  const currentFrame = (index: number) => 
+    `/frames/${(index + 1).toString().padStart(4, '0')}.jpg`; // Path to frames
 
   useLayoutEffect(() => {
-    const video = videoRef.current;
-    const section = sectionRef.current;
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const context = canvas.getContext('2d');
+    contextRef.current = context;
 
-    if (!video || !section) return;
+    // 1. Pre-load images into memory
+    const images: HTMLImageElement[] = [];
+    const airpods = { frame: 0 };
 
-    // 2. The function that builds the animation
-    const initVideoAnimation = () => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: section,
-          start: "top top",
-          end: "+=4000", // Total scroll distance (4000px)
-          scrub: 1.5,   // Ties video time to scrollbar
-          pin: true,    // Keeps video on screen
-          markers: false // Set to true to see 'start' and 'end' labels
-        },
-      });
-
-      // 3. Animate the 'currentTime' property
-      tl.fromTo(
-        video,
-        { currentTime: 0 },
-        { 
-          currentTime: video.duration || 5, 
-          ease: "none" 
-        }
-      );
-    };
-
-    // 4. Handle video loading
-    if (video.readyState >= 2) {
-      initVideoAnimation();
-    } else {
-      video.addEventListener("loadedmetadata", initVideoAnimation);
+    for (let i = 0; i < frameCount; i++) {
+      const img = new Image();
+      img.src = currentFrame(i);
+      images.push(img);
     }
 
-    // 5. Cleanup when leaving the page
+    // 2. Function to draw the current image to canvas
+    const render = () => {
+      if (context && images[airpods.frame]) {
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        context.drawImage(images[airpods.frame], 0, 0, canvas.width, canvas.height);
+      }
+    };
+
+    // 3. GSAP ScrollTrigger
+    gsap.to(airpods, {
+      frame: frameCount - 1,
+      snap: "frame",
+      ease: "none",
+      scrollTrigger: {
+        trigger: canvas,
+        start: "top top",
+        end: "+=4000", // Scroll length
+        scrub: 0.5,   // Small delay makes it feel smoother on touchpads
+        pin: true,
+      },
+      onUpdate: render // Draw new frame every time the scroll moves
+    });
+
+    // Draw first frame initially
+    images[0].onload = render;
+
     return () => {
-      ScrollTrigger.getAll().forEach((st) => st.kill());
+      ScrollTrigger.getAll().forEach(t => t.kill());
     };
   }, []);
 
   return (
     <main className="bg-black">
-      {/* THE PINNED VIDEO SECTION */}
-      <section ref={sectionRef} className="video-container">
-        <video
-          ref={videoRef}
-          src="\Media\MechanicalVirusLikeInsectMadeInBlender.mp4" // Ensure this path matches your public folder
-          playsInline
-          muted
-          preload="auto"
-          className="video-element"
-        />
-        
-        {/* TEXT OVERLAY */}
-        <div className="overlay">
-          <h1 className="headerFont text-white text-6xl">/Chaimmendes</h1>
-          <p className="text-purple-500 font-mono">hi</p>
-        </div>
-      </section>
-
-      {/* NEXT SECTION (So you have room to scroll) */}
-      <section className="next-section">
-        <h2 className="text-white text-4xl">Hi</h2>
-        <p className="text-gray-400 mt-4">Ho</p>
+      <canvas 
+        ref={canvasRef} 
+        width={1920} 
+        height={1080} 
+        className="w-full h-screen object-cover"
+      />
+      <section className="h-screen bg-white flex items-center justify-center">
+        <h2 className="text-4xl">Next Content</h2>
       </section>
     </main>
   );
