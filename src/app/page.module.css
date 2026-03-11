@@ -1,0 +1,38 @@
+/* Ensure the container is exactly the size of the screen */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Make the video fill the background like a cover image */
+.video-element {
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0);
+  will-change: contents;
+  backface-visibility: hidden;
+}
+
+/* Position the text in the dead center */
+.overlay {
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  pointer-events: none; /* Allows scrolling even if mouse is over text */
+}
+
+/* Placeholder for the section after the video */
+.next-section {
+  height: 300vh;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #333;
+}
