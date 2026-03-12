@@ -51,7 +51,7 @@ export default function FrameScroll() {
         trigger: canvas,
         start: "top top",
         end: "+=3000", // Distance to scroll (higher = slower animation)
-        scrub: 0.5,    // Smoothing (0.5 is great for touchpads)
+        scrub: 1,    // Smoothing (0.5 is great for touchpads)
         pin: true,     // Stuck to screen while scrolling
       },
       onUpdate: render // Every time scroll moves, redraw
@@ -76,6 +76,7 @@ export default function FrameScroll() {
           height={1080} 
           className="canvas-element"
         />
+        
       </div>
 
       {/* Placeholder section to allow scrolling past the canvas */}
