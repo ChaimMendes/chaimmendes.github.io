@@ -1,16 +1,31 @@
 /* Ensure the container is exactly the size of the screen */
-.canvas-wrapper{
+.herovideo{
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 200vh;
   overflow: visible;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: top;
+  align-items: top;
+}
+
+.sticky{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.sticky video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .welcomeMessage{
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -22,7 +37,25 @@
   font-weight: 300;
   color: var(--green);
   overflow: hidden;
+  scale: 1;
+  backdrop-filter: blur(0px);
+  animation: becomeBig 1s ease-in-out forwards;
+  animation-timeline: scroll();
+  animation-range: entry 0% cover 50%;
 }
+
+@keyframes becomeBig {
+  0% {
+    scale: 1;
+    backdrop-filter: blur(0px);
+  }
+  100% {
+    scale: 2;
+    backdrop-filter: blur(10px);
+  }
+
+}
+
 /* Make the video fill the background like a cover image */
 .next-section {
   position: sticky;
@@ -40,7 +73,7 @@
 .next-section h2{
   font-family: var(--font-headers);
   font-weight: 200;
-  font-size: 3rem;
+  font-size: 4vw;
 }
 
 .next-section * {
@@ -65,7 +98,6 @@
     scale: 1;
   }
 }
-
 
 
 .green {
