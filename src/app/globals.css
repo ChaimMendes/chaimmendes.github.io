@@ -2,7 +2,7 @@
 
 :root {
   /* Highlight Colors */
-  --purple: #9B00FF;
+  --purple: #a92bfd;
   --green: #8FFE09;
 
   /* Background Colors */
@@ -26,6 +26,7 @@ body {
 .headerFont {
   font-family: var(--font-headers);
 }
+
 /* Navigation Bar ------------------------------------------------- */
 nav {
   background: linear-gradient(to bottom, var(--bg-black), #00000000);
@@ -143,17 +144,19 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;;
+  text-align: center;
+  ;
 }
+
 footer .stamp {
   font-weight: 200;
   font-size: 5rem;
   font-family: var(--font-headers);
   scale: 1;
   opacity: 0.5;
-  animation: BecomeBig linear;
+  animation: BecomeBig linear forwards;
   animation-timeline: view();
-  animation-range: entry 0% cover 50%;
+  animation-range: entry 0% cover 100%;
 }
 
 @keyframes BecomeBig {
@@ -161,13 +164,14 @@ footer .stamp {
     scale: 1;
     opacity: 0.5;
   }
+
   100% {
     scale: 2;
     opacity: 1;
   }
 }
 
-footer p{
+footer p {
   padding: 20px;
 }
 

@@ -60,9 +60,9 @@ export default function FrameScroll() {
       </div>
       {/* Placeholder section to allow scrolling past the canvas */}
       <div className={styles["next-section"]}>
-        <p>Hi, i'm Chaim Mendes, and I beleive in making</p>
-        <h2 className={styles['green']}>Functional Things Pretty,</h2>
-        <h2 className={styles['purple']}>and Pretty Things Functional.</h2>
+        <p>Hi, i'm Chaim Mendes! I make</p>
+        <h2 className={styles['green']}>Pretty Things Functional, &</h2>
+        <h2 className={styles['purple']}>Functional Things Pretty.</h2>
         <p>(like this site)</p>
       </div>
     </main>
