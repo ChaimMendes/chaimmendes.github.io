@@ -118,15 +118,68 @@
 /* Blender section */
 .blenderContainer {
   position: relative;
-  height: 200vh;
+  height: 300vh; /* Gives space to scroll */
   width: 100%;
+  background-color: var(--bg-black);
 }
+
 .skillimage {
   position: sticky;
   top: 0;
   width: 100%;
   height: 100vh;
-  background-image: url('Media/SpaceshipSciFi.png');
+  background-image: url('/Media/SpaceshipSciFi.png');
   background-size: cover;
   background-position: center;
+}
+
+.skillstencil {
+  position: absolute;
+  top: 0; /* Starts below the image so you scroll INTO it */
+  width: 70%;
+  height: 70vh;
+  margin: 15vh 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Use 'multiply' for a black stencil cutout */
+  background-color: white; 
+  mix-blend-mode: screen; 
+}
+
+.skillstencil p {
+  font-family: var(--font-code);
+  font-size: 10vw;
+  font-weight: 900;
+  /* Black text + multiply blend mode = Transparent hole */
+  color: black; 
+  margin: 0;
+}
+
+.skillInfo{
+  position: absolute;
+  bottom: 0;
+  background-color: var(--bg-black);
+  font-family: var(--font-code);
+  height: 100vh;
+  width: 100%;
+  font-size: 2rem;
+  padding: 10vh 10vw;
+}
+.skillInfo * {
+  margin: 10vh 0;
+}
+.skillInfo a{
+  color: var(--green);
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 10px;
+  outline-style: solid;
+  outline-width: 0px;
+  outline-color: var(--purple);
+  transition: outline 0.3s ease-in-out;
+}
+.skillInfo a:hover{
+  outline: 6px solid var(--purple);
 }

@@ -70,6 +70,10 @@ export default function FrameScroll() {
         <div className={styles["skillstencil"]}>
           <p>Blender</p>
         </div>
+        <div className={styles["skillInfo"]}>
+          <h3>I am a 3D artist and I love bringing ideas to life in my virtual universe so that they can iterate, grow, and mature into the world we know.</h3>
+          <a href="/portfolio">View My Portfolio◭</a>
+        </div>
       </div>
     </main>
   );
