@@ -3,7 +3,7 @@
   position: relative;
   width: 100%;
   height: 200vh;
-  overflow: visible;
+  overflow: clip;
   display: flex;
   justify-content: top;
   align-items: top;
@@ -36,9 +36,9 @@
   font-size: 10vw;
   font-weight: 300;
   color: var(--green);
-  overflow: hidden;
   scale: 1;
   backdrop-filter: blur(0px);
+  will-change: backdrop-filter;
   animation: becomeBig 1s ease-in-out forwards;
   animation-timeline: scroll();
   animation-range: entry 0% cover 50%;
@@ -62,28 +62,25 @@
 
 /* Make the video fill the background like a cover image */
 .next-section {
-  position: sticky;
-  top: 0;;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--bg-black);
-  z-index: 2;
   text-align: center;
   text-overflow: wrap;
 }
 .next-section p{
   font-family: var(--font-code);
   font-weight: 100;
-  font-size: 2vw;
+  font-size: 1.5rem;
 }
 .next-section h2{
   font-family: var(--font-headers);
   font-weight: 200;
-  font-size: 4vw;
+  font-size: clamp(2rem, 5vw, 5rem);
 }
 
 .next-section * {
