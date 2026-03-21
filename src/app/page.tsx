@@ -63,7 +63,13 @@ export default function FrameScroll() {
         <p>Hi, i'm Chaim Mendes! I make</p>
         <h2 className={styles['green']}>Pretty Things Functional, &</h2>
         <h2 className={styles['purple']}>Functional Things Pretty.</h2>
-        <p>(like this site)</p>
+      </div>
+      {/* Blender Portfolo Section */}
+      <div className={styles["blenderContainer"]}>
+        <div className={styles["skillimage"]}></div>
+        <div className={styles["skillstencil"]}>
+          <p>Blender</p>
+        </div>
       </div>
     </main>
   );
