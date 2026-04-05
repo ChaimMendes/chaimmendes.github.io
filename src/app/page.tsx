@@ -62,12 +62,18 @@ export default function FrameScroll() {
 
       {/* About Me Section */}
       <div className={styles["AboutContainer"]}>
+        <div className={styles["splash"]}>/&lt;</div>
         <div className={`${styles["left"]} ${styles["aboutcontainers"]}`}>
           <h1>Chaim<br />Mendes</h1>
         </div>
         <div className={`${styles["right"]} ${styles["aboutcontainers"]}`}>
-          <h3>Web developer &3D artist.</h3>
+          <h3>3D artist.</h3>
+          <hr />
+          <h3>Web developer.</h3>
+          <hr />
           <h3>Fluent in Next.js, TypeScript, HTML, CSS, Python.</h3>
+          <hr />
+          <h3>Engineer</h3>
         </div>
       </div>
 

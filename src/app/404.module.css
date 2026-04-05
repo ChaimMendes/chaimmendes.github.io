@@ -1,4 +1,5 @@
 .container{
+    font-family: var(--font-code);
     margin: auto;
     display: flex;
     flex-direction: column;

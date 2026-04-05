@@ -79,50 +79,78 @@
   padding: 10px;
   color: #FFFFFF;
   transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
+  background-color: var(--bg-darker);
 }
 
 .aboutcontainers>* {
-  max-width: 50%;
+  width: 70%;
 }
 
 .aboutcontainers.left {
   left: 0;
+  display: flex;
   justify-content: right;
+  align-items: baseline;
   text-align: right;
   font-size: 7vw;
   font-family: var(--font-headers);
+  animation: nameAnimationleft 1s ease-in-out forwards;
+  animation-timeline: view();
+  animation-range: entry 30% cover 80%;
 }
 
 .aboutcontainers.right {
   right: 0;
+  display: flex;
   justify-content: left;
+  flex-direction: column;
+  align-items: baseline;
   text-align: left;
-  font-size: 2vw;
+  font-size: 3vw;
   font-family: var(--font-code);
+  animation: nameAnimationright 1s ease-in-out forwards;
+  animation-timeline: view();
+  animation-range: entry 30% cover 80%;
 }
 
 @keyframes nameAnimationleft {
   0% {
-    transform: translate(-50%, 0);
+    transform: translateX(0) translateY(-50%);
   }
 
   100% {
-    transform: translate(-100%, 0);
+    transform: translateX(-50%) translateY(-50%);
   }
 }
 
 @keyframes nameAnimationright {
   0% {
-    transform: translate(50%, 0);
+    transform: translateX(0) translateY(-50%);
   }
 
   100% {
-    transform: translate(100%, 0);
+    transform: translateX(50%) translateY(-50%);
   }
 }
+
+
+.splash{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  font-family: var(--font-code);
+  font-size: 10vw;
+  font-weight: 300;
+  color: var(--green);
+  text-align: center;
+  transform-origin: center;
+  scale: 1;
+}
+
+
 
 /* Make the video fill the background like a cover image */
 .next-section {
