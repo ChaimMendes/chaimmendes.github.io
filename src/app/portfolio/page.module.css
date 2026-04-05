@@ -78,6 +78,7 @@
     animation: gettall 0.3s linear;
     animation-timeline: view();
     animation-range: entry 0% cover 100%;
+    will-change: height;
 }
 
 @keyframes gettall {
