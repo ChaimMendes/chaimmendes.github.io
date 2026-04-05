@@ -1,15 +1,15 @@
 /* Ensure the container is exactly the size of the screen */
-.herovideo{
+.herovideo {
   position: relative;
   width: 100%;
-  height: 200vh;
+  height: 150vh;
   overflow: clip;
   display: flex;
   justify-content: top;
   align-items: top;
 }
 
-.sticky{
+.sticky {
   position: sticky;
   top: 0;
   width: 100%;
@@ -22,7 +22,7 @@
   object-fit: cover;
 }
 
-.welcomeMessage{
+.welcomeMessage {
   position: absolute;
   top: 0;
   left: 0;
@@ -49,15 +49,79 @@
     scale: 1;
     backdrop-filter: blur(0px);
   }
+
   10% {
     scale: 1.3;
     backdrop-filter: blur(3px);
   }
+
   100% {
     scale: 2;
     backdrop-filter: blur(10px);
   }
 
+}
+
+/* About section */
+.AboutContainer {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--bg-darker);
+  border-radius: 0 0 100px 100px;
+}
+
+.aboutcontainers {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  padding: 10px;
+  color: #FFFFFF;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.aboutcontainers>* {
+  max-width: 50%;
+}
+
+.aboutcontainers.left {
+  left: 0;
+  justify-content: right;
+  text-align: right;
+  font-size: 7vw;
+  font-family: var(--font-headers);
+}
+
+.aboutcontainers.right {
+  right: 0;
+  justify-content: left;
+  text-align: left;
+  font-size: 2vw;
+  font-family: var(--font-code);
+}
+
+@keyframes nameAnimationleft {
+  0% {
+    transform: translate(-50%, 0);
+  }
+
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+@keyframes nameAnimationright {
+  0% {
+    transform: translate(50%, 0);
+  }
+
+  100% {
+    transform: translate(100%, 0);
+  }
 }
 
 /* Make the video fill the background like a cover image */
@@ -72,12 +136,14 @@
   text-align: center;
   text-overflow: wrap;
 }
-.next-section p{
+
+.next-section p {
   font-family: var(--font-code);
   font-weight: 100;
   font-size: 1.5rem;
 }
-.next-section h2{
+
+.next-section h2 {
   font-family: var(--font-headers);
   font-weight: 200;
   font-size: clamp(2rem, 5vw, 5rem);
@@ -96,10 +162,12 @@
     opacity: 0;
     scale: 0.8;
   }
+
   60% {
     opacity: 0.5;
     scale: 1;
   }
+
   100% {
     opacity: 1;
     scale: 1;
@@ -110,15 +178,17 @@
 .green {
   color: var(--green);
 }
+
 .purple {
   color: var(--purple);
 }
 
 
 /* Blender section */
-.blenderContainer {
+.skillContainer {
   position: relative;
-  height: 300vh; /* Gives space to scroll */
+  height: 300vh;
+  /* Gives space to scroll */
   width: 100%;
   background-color: var(--bg-black);
 }
@@ -128,24 +198,34 @@
   top: 0;
   width: 100%;
   height: 100vh;
-  background-image: url('/Media/SpaceshipSciFi.png');
   background-size: cover;
   background-position: center;
 }
 
 .skillstencil {
   position: absolute;
-  top: 0; /* Starts below the image so you scroll INTO it */
+  top: 0;
+  /* Starts below the image so you scroll INTO it */
   width: 70%;
   height: 70vh;
   margin: 15vh 15%;
   display: flex;
   align-items: center;
   justify-content: center;
-  
   /* Use 'multiply' for a black stencil cutout */
-  background-color: white; 
-  mix-blend-mode: screen; 
+  background-color: rgb(0, 0, 0);
+  mix-blend-mode: multiply;
+}
+
+.stencilbacker {
+  position: absolute;
+  top: 0;
+  /* Starts below the image so you scroll INTO it */
+  width: 70%;
+  height: 70vh;
+  margin: 15vh 15%;
+  background-color: #ffffff25;
+  backdrop-filter: blur(5px);
 }
 
 .skillstencil p {
@@ -153,24 +233,26 @@
   font-size: 10vw;
   font-weight: 900;
   /* Black text + multiply blend mode = Transparent hole */
-  color: black; 
+  color: white;
   margin: 0;
 }
 
-.skillInfo{
+.skillInfo {
   position: absolute;
   bottom: 0;
   background-color: var(--bg-black);
   font-family: var(--font-code);
   height: 100vh;
   width: 100%;
-  font-size: 2rem;
+  font-size: Clamp(1rem, 3vw, 1.5rem);
   padding: 10vh 10vw;
 }
+
 .skillInfo * {
   margin: 10vh 0;
 }
-.skillInfo a{
+
+.skillInfo a {
   color: var(--green);
   text-decoration: none;
   padding: 5px;
@@ -180,6 +262,17 @@
   outline-color: var(--purple);
   transition: outline 0.3s ease-in-out;
 }
-.skillInfo a:hover{
+
+.skillInfo a:hover {
   outline: 6px solid var(--purple);
+}
+
+
+
+.BlenderImage {
+  background-image: url('/Media/BlenderSpaceshipSciFiArtworkByChaimMendes.png');
+}
+
+.WebDevImage {
+  background-image: url("/Media/IcePlanetProceduralyMadeByChaimMendes.png");
 }
