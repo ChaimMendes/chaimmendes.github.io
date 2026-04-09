@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fira_Code, Major_Mono_Display, Lexend_Deca } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 // Import Navabar and Footer
 import Navbar from "@/components/Navbar";
@@ -39,6 +40,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
