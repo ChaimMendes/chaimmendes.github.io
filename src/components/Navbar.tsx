@@ -7,13 +7,16 @@ export default function Navbar() {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     }
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    }
     return (
         <nav className={isMenuOpen? "navopen" : ""}>
             <div className="hiddenMenu" id="hiddenMenu">
                 <ul>
-                    <li><Link href="/">Home</Link></li>
-                    <li><Link href="/about">About</Link></li>
-                    <li><Link href="/portfolio">Portfolio</Link></li>
+                    <li><Link href="/" onClick={closeMenu}>Home</Link></li>
+                    <li><Link href="/about" onClick={closeMenu}>About</Link></li>
+                    <li><Link href="/portfolio" onClick={closeMenu}>Portfolio</Link></li>
                 </ul>
             </div>
             <div className="navMain">

@@ -171,6 +171,7 @@
     font-family: var(--font-code);
     margin-bottom: 2rem;
     transition: color 0.3s ease;
+    z-index: 10;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -234,6 +235,30 @@
 }
 
 .MarkdownContent h3 {
+    font-family: var(--font-headers);
+    font-size: clamp(1.2rem, 3vw, 3rem);
+    color: #FFF;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.MarkdownContent h4 {
+    font-family: var(--font-headers);
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    color: var(--purple);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.MarkdownContent h5 {
+    font-family: var(--font-headers);
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    color: #FFF;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.MarkdownContent h6 {
     font-family: var(--font-headers);
     font-size: clamp(1.2rem, 2vw, 1.5rem);
     color: #FFF;

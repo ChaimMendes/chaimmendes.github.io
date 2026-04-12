@@ -16,7 +16,7 @@ export default function FrameScroll() {
   useEffect(() => {
     const currentPhrase = phrases[phraseIndex];
     const typingSpeed = isDeleting ? 50 : 150;
-    const pauseTime = 1500;
+    const pauseTime = 1000;
 
     const timeout = setTimeout(() => {
       if (!isDeleting) {
