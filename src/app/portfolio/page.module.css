@@ -270,3 +270,17 @@
     margin-bottom: 1rem;
     text-align: justify;
 }
+
+.MarkdownContent div[dangerouslySetInnerHTML] {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.MarkdownContent iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 12px;
+    display: block;
+}

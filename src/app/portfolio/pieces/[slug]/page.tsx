@@ -43,6 +43,32 @@ function parseAndRenderContent(content: string) {
       }
     }
 
+    // Handle HTML content (iframes, divs, etc.)
+    if (line.trim().startsWith('<')) {
+      let htmlContent = line;
+      i++;
+      // Collect consecutive HTML lines (for multi-line HTML elements like iframes)
+      while (i < lines.length && !lines[i].trim().startsWith('#') && !lines[i].trim().startsWith('[CAROUSEL:')) {
+        htmlContent += '\n' + lines[i];
+        i++;
+        // Stop if we find a closing tag that matches the opening tag
+        const openTag = htmlContent.match(/<(\w+)/)?.[1];
+        const closeTagCount = (htmlContent.match(new RegExp(`</${openTag}>`, 'g')) || []).length;
+        const openTagCount = (htmlContent.match(new RegExp(`<${openTag}[^>]*>`, 'g')) || []).length;
+        if (closeTagCount > 0 && closeTagCount >= openTagCount) {
+          break;
+        }
+      }
+
+      elements.push(
+        <div
+          key={`html-${i}`}
+          dangerouslySetInnerHTML={{ __html: htmlContent }}
+        />
+      );
+      continue;
+    }
+
     // Handle headers (# through ######)
     const headerMatch = line.match(/^(#+)\s*(.*)/);
     if (headerMatch) {
