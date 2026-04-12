@@ -2,7 +2,7 @@
 name: McLaren 720s
 description: A highly detailed 3D model of a McLaren 720s created in Blender.
 image: /Media/0525.png
-priority: 1
+priority: 2
 ---
 
 # Final Render
