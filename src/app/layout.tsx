@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import LenisScroll from "@/components/LenisScroll";
+import { Analytics } from "@vercel/analytics/next"
 
 const firaCode = Fira_Code({
   variable: "--font-code",
