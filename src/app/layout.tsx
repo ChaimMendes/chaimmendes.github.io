@@ -26,6 +26,13 @@ const lexendDeca = Lexend_Deca({
 export const metadata: Metadata = {
   title: "Chaim Mendes | 3D Artist & Web Developer",
   description: "Chaim Mendes's personal website showcasing his work as a 3D artist and web developer.",
+  metadataBase: new URL('https://chaimmendes.vercel.app'),
+  alternates: {
+    canonical: '/',
+  },
+  verification: {
+    google: 'qN9blXpCI6P2Dn-cYGOEh9x4SDOgJCK9CZGxp20P5R8', // Just the code from inside the quotes
+  },
 };
 
 export default function RootLayout({
