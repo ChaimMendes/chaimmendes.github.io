@@ -17,34 +17,41 @@ export default function AboutPage() {
             </div>
             <div className={styles["part2"]}>
                 <div>
-                    <div style={{ backgroundImage: "url('/Media/MarsMisssions/Spirit.jpg')" }}>
+                    <div style={{ backgroundImage: "url('/Media/MarsMissions/Spirit.jpg')" }}>
                         <h3>the</h3>
                         <h2>SPIRIT</h2>
+                        <p className={styles["missionLabel"]}>Mars Rover 1</p>
                     </div>
-                    <div style={{ backgroundImage: "url('/Media/MarsMisssions/Spirit.jpg')" }}>
+                    <div style={{ backgroundImage: "url('/Media/MarsMissions/Ingenuity.jpg')" }}>
                         <h3>of</h3>
                         <h2>INGENUITY</h2>
+                        <p className={styles["missionLabel"]}>The Original Mars Helicopter</p>
                     </div>
 
                 </div>
                 <div>
-                    <div style={{ backgroundImage: "url('/Media/MarsMisssions/Spirit.jpg')" }}>
+                    <div style={{ backgroundImage: "url('/Media/MarsMissions/Dart.jpg')" }}>
                         <h2>DART</h2>
-                        <h3>ing</h3></div>
-                    <div style={{ backgroundImage: "url('/Media/MarsMisssions/Spirit.jpg')" }}>
+                        <h3>ing</h3>
+                        <p className={styles["missionLabel"]}>Astroid Kinetic Impact Experiment</p>
+                    </div>
+                    <div style={{ backgroundImage: "url('/Media/MarsMissions/Curiosity.jpg')" }}>
                         <h3>with</h3>
                         <h2>CURIOSITY</h2>
+                        <p className={styles["missionLabel"]}>The Small Big Brother</p>
                     </div>
 
                 </div>
                 <div>
-                    <div style={{ backgroundImage: "url('/Media/MarsMisssions/Spirit.jpg')" }}>
+                    <div style={{ backgroundImage: "url('/Media/MarsMissions/odessy.jpg')" }}>
                         <h3>the</h3>
                         <h2>ODESSEY</h2>
+                        <p className={styles["missionLabel"]}>The Oldest Mars Orbiter</p>
                     </div>
-                    <div style={{ backgroundImage: "url('/Media/MarsMisssions/Spirit.jpg')" }}>
+                    <div style={{ backgroundImage: "url('/Media/MarsMissions/Voyager.jpg')" }}>
                         <h3>and the</h3>
                         <h2>VOAGE</h2>
+                        <p className={styles["missionLabel"]}>The Furthest We Ever Went</p>
                     </div>
 
                 </div>
