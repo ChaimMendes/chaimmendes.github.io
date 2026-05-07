@@ -55,6 +55,19 @@ export default function AboutPage() {
                     </div>
 
                 </div>
+
+            </div>
+            <div className={styles["part3"]}>
+                <div>
+                    <h2>Get In Touch</h2>
+                    <h3>Our (sole) developer is currently undergoing a fairly long process known as education. This should take under a decade. In case you are interested in any of the assets/3D models on this site, feel free to reach out!</h3>
+                    <address className={styles["address"]}>
+                        Visit my <a href="" >Turbosquid Store.</a> <br />
+                        Visit my <a href="">CGTrader Store.</a> <br />
+                        Or Contact me at <a href="mailto:chaimthemendes@gmail.com">chaimthemendes@gmail.com</a>
+                    </address>
+                </div>
+
             </div>
         </>
     )
