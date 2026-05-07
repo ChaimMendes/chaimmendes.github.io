@@ -14,17 +14,37 @@
   --white: #FFFFFF;
 }
 
-body {
-  background-color: var(--bg-black);
+
+html {
   margin: 0;
   padding: 0;
+  /* Improves font rendering during movement */
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* Allow body to expand with content for scrolling */
+  min-height: 100vh;
   overflow-x: hidden;
   color: var(--white);
   font-family: var(--font-main);
+  background-color: var(--bg-black);
 }
-
 .headerFont {
   font-family: var(--font-headers);
+}
+canvas, img, video {
+  /* Prevents images/videos from 'stuttering' during scroll */
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Utility to de-jank any moving part */
+.smooth-element {
+  will-change: transform, opacity;
+  transform: translateZ(0);
 }
 
 /* Navigation Bar ------------------------------------------------- */

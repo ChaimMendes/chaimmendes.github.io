@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Fira_Code, Major_Mono_Display, Lexend_Deca } from "next/font/google";
 import "./globals.css";
-
 // Import Navabar and Footer
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import LenisScroll from "@/components/LenisScroll";
 
 const firaCode = Fira_Code({
   variable: "--font-code",
@@ -35,6 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${lexendDeca.variable} ${majorMonoDisplay.variable} ${firaCode.variable} antialiased`}>
+        <LenisScroll />
         {/* Navagation bar and header */}
         <Navbar />
         {children}
