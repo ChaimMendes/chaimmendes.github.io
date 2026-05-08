@@ -12,13 +12,13 @@ export default function AboutPage() {
                     <h1>My name is <br /> Chaim Mendes.</h1>
                 </div>
                 <div className={styles["secondCircle"]}>
-                    <h2>Unprofessionally, I am a Web Developer and a Blender artist who believes in making beautiful digital experiences and seamless functionality. Professionaly? I am nothing. Yet. (Its called education.)</h2>
+                    <h2>Unprofessionally, I am a web developer and a Blender artist who believes in making beautiful digital experiences and seamless functionality. Professionally? I am nothing. Yet. (Its called education.)</h2>
                 </div>
             </div>
             <div className={styles["part2"]}>
                 <div>
                     <div style={{ backgroundImage: "url('/Media/MarsMissions/Spirit.jpg')" }}>
-                        <h3>the</h3>
+                        <h3>in the</h3>
                         <h2>SPIRIT</h2>
                         <p className={styles["missionLabel"]}>Mars Rover 1</p>
                     </div>

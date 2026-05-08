@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './ImageCarousel.module.css';
 
 interface ImageCarouselProps {
@@ -10,6 +10,14 @@ interface ImageCarouselProps {
 
 export default function ImageCarousel({ images, alt = 'Carousel image' }: ImageCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Preload all images to prevent lag when switching
+  useEffect(() => {
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, [images]);
 
   if (!images || images.length === 0) {
     return <div className={styles['carousel-empty']}>No images provided</div>;

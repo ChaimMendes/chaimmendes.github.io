@@ -92,7 +92,7 @@ export default function FrameScroll() {
           <p>Blender</p>
         </div>
         <div className={styles["skillInfo"]}>
-          <h3>I am a 3D artist and I love bringing ideas to life in my virtual universe so that they can iterate, grow, and mature into the world we know.</h3>
+          <h3>I am a 3D artist who brings ideas to pixels in my personal universe so that they can iterate, grow, and emerge into the world we all know.</h3>
           <a href="/portfolio">View My Portfolio◭</a>
         </div>
       </div>
@@ -104,7 +104,7 @@ export default function FrameScroll() {
           <p>WebDev</p>
         </div>
         <div className={styles["skillInfo"]}>
-          <h3>I am a web developer and I love to build, grow and decorate my internet real estate collection.</h3>
+          <h3>I am also a construction worker(not really). I use HTML, CSS, and JavaScript to build and decorate my internet real estate collection.</h3>
           <h2>I am fluent in Next.js, TypeScript, HTML, CSS, and JavaScript.</h2>
         </div>
       </div>
