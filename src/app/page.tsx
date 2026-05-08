@@ -104,7 +104,7 @@ export default function FrameScroll() {
           <p>WebDev</p>
         </div>
         <div className={styles["skillInfo"]}>
-          <h3>I am also a construction worker(not really). I use HTML, CSS, and JavaScript to build and decorate my internet real estate collection.</h3>
+          <h3>I am also a construction worker (not really). I use HTML, CSS, and JavaScript to build and decorate my internet real estate collection.</h3>
           <h2>I am fluent in Next.js, TypeScript, HTML, CSS, and JavaScript.</h2>
         </div>
       </div>
