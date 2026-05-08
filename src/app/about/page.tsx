@@ -12,7 +12,7 @@ export default function AboutPage() {
                     <h1>My name is <br /> Chaim Mendes.</h1>
                 </div>
                 <div className={styles["secondCircle"]}>
-                    <h2>Unprofessionaly, I am Web Developer and Blender artist who believes in making beautiful digital experiences and seamless functionality. Professionaly, I am nothing. Yet. Its callled education.</h2>
+                    <h2>Unprofessionally, I am a Web Developer and a Blender artist who believes in making beautiful digital experiences and seamless functionality. Professionaly? I am nothing. Yet. (Its called education.)</h2>
                 </div>
             </div>
             <div className={styles["part2"]}>
@@ -33,7 +33,7 @@ export default function AboutPage() {
                     <div style={{ backgroundImage: "url('/Media/MarsMissions/Dart.jpg')" }}>
                         <h2>DART</h2>
                         <h3>ing</h3>
-                        <p className={styles["missionLabel"]}>Astroid Kinetic Impact Experiment</p>
+                        <p className={styles["missionLabel"]}>Asteroid Kinetic Impact Experiment</p>
                     </div>
                     <div style={{ backgroundImage: "url('/Media/MarsMissions/Curiosity.jpg')" }}>
                         <h3>with</h3>
@@ -45,12 +45,12 @@ export default function AboutPage() {
                 <div>
                     <div style={{ backgroundImage: "url('/Media/MarsMissions/odessy.jpg')" }}>
                         <h3>the</h3>
-                        <h2>ODESSEY</h2>
+                        <h2>ODYSSEY</h2>
                         <p className={styles["missionLabel"]}>The Oldest Mars Orbiter</p>
                     </div>
                     <div style={{ backgroundImage: "url('/Media/MarsMissions/Voyager.jpg')" }}>
                         <h3>and the</h3>
-                        <h2>VOAGE</h2>
+                        <h2>VOYAGER</h2>
                         <p className={styles["missionLabel"]}>The Furthest We Ever Went</p>
                     </div>
 

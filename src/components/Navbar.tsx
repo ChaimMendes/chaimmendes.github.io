@@ -1,6 +1,6 @@
 'use client';
- import { useState } from "react";
- import Link from "next/link";
+import { useState } from "react";
+import Link from "next/link";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +11,7 @@ export default function Navbar() {
         setIsMenuOpen(false);
     }
     return (
-        <nav className={isMenuOpen? "navopen" : ""}>
+        <nav className={isMenuOpen ? "navopen" : ""}>
             <div className="hiddenMenu" id="hiddenMenu">
                 <ul>
                     <li><Link href="/" onClick={closeMenu}>Home</Link></li>
@@ -23,7 +23,7 @@ export default function Navbar() {
                 <div className="logo">
                     <h1><b>/&lt;</b>haim mendes</h1>
                 </div>
-                <button id={isMenuOpen? "menuopen NavButton" : "NavButton"} onClick={toggleMenu}></button>
+                <button id={isMenuOpen ? "menuopen NavButton" : "NavButton"} onClick={toggleMenu}></button>
             </div>
         </nav>
     )

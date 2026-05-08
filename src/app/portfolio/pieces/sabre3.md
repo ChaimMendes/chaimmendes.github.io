@@ -1,6 +1,6 @@
 ---
 name: Sabre 3
-description: A sci-fi spacecraft created in Blender with procedural textures and powerfull texture maps.
+description: A sci-fi spacecraft created in Blender with procedural textures and powerful texture maps.
 image: /Media/BlenderSpaceshipSciFiArtworkByChaimMendes.png
 priority: 5
 ---
