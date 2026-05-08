@@ -7,9 +7,7 @@ priority: 7
 
 # Final Render
 
-<iframe
-src="https://www.youtube.com/embed/e4pnI0JfckU">
-</iframe>
+<iframe src="https://www.youtube.com/embed/e4pnI0JfckU" title="Blender McLaren 720s Render" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [CAROUSEL: /Media/0190.png, /Media/0350.png, /Media/0499.png, /Media/0524.png, /Media/0525.png]
 
