@@ -2,7 +2,7 @@
 name: Rolls Royce Spectre
 description: A highly detailed 3D model of a Rolls Royce Spectre created in Blender.
 image: /Media/White01.jpg
-priority: 1
+priority: 4
 ---
 
 # Final Render

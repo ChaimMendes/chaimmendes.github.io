@@ -204,6 +204,7 @@
 
 .PieceContent {
     max-width: 800px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -211,13 +212,13 @@
     font-family: var(--font-headers);
     font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: 1rem;
-    color: #FFF;
+    color: var(--green);
 }
 
 .PieceIntro {
     font-family: var(--font-code);
     font-size: 1.2rem;
-    color: #ccc;
+    color: white;
     margin-bottom: 2rem;
     line-height: 1.6;
 }
@@ -225,7 +226,7 @@
 .MarkdownContent {
     font-family: var(--font-code);
     line-height: 1.8;
-    color: #ddd;
+    color: #ccc;
 }
 
 .MarkdownContent h2 {
@@ -239,7 +240,7 @@
 .MarkdownContent h3 {
     font-family: var(--font-headers);
     font-size: clamp(1.2rem, 3vw, 3rem);
-    color: #FFF;
+    color: var(--green);
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
 }
@@ -271,6 +272,17 @@
 .MarkdownContent p {
     margin-bottom: 1rem;
     text-align: justify;
+}
+
+.MarkdownContent a {
+    color: var(--green);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    cursor: pointer;
+}
+
+.MarkdownContent a:hover {
+    color: var(--purple);
 }
 
 .MarkdownContent div[dangerouslySetInnerHTML] {
