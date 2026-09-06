@@ -4,7 +4,7 @@ export default function AboutPage() {
     return (
         <>
             <div className={styles["heroSection"]}>
-                <img src="/Media/Droid.png" alt="" />
+                <img src="/Media/Droid.jpg" alt="" />
                 <h1>About</h1>
             </div>
             <div className={styles["part1"]}>

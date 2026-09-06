@@ -1,7 +1,7 @@
 ---
 name: Procedural Planets
 description: A pair of sci-fi "fire and ice" planet environments created in Blender with procedural textures that provide stunning visuals.
-image: /Media/IcePlanetCompressed.png
+image: /Media/IcePlanetCompressed.jpg
 priority: 100
 ---
 
@@ -9,7 +9,7 @@ priority: 100
 
 This pair planet, which was created as a test for the procedural textures. The textures were created using Blender's procedural texture system, which allows for a high level of detail and realism without the need for UV mapping or image textures.
 
-[CAROUSEL: /Media/IcePlanetCompressed.png, /Media/DesertPlanet.png]
+[CAROUSEL: /Media/IcePlanetCompressed.jpg, /Media/DesertPlanet.jpg]
 
 ## Process
 

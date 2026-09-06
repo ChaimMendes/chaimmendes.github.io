@@ -1,7 +1,7 @@
 ---
 name: McLaren 720s
 description: A 3D model of a McLaren 720s with interiors included.
-image: /Media/0525.png
+image: /Media/0525.jpg
 priority: 7
 ---
 
@@ -9,9 +9,9 @@ priority: 7
 
 <iframe src="https://www.youtube.com/embed/e4pnI0JfckU" title="Blender McLaren 720s Render" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-[CAROUSEL: /Media/0190.png, /Media/0350.png, /Media/0499.png, /Media/0524.png, /Media/0525.png]
+[CAROUSEL: /Media/0190.jpg, /Media/0350.jpg, /Media/0499.jpg, /Media/0524.jpg, /Media/0525.jpg]
 
-[CAROUSEL: /Media/720s_01.png, /Media/720s_02.png, /Media/720s_03.png, /Media/720s_04.png, /Media/720s_05.png, /Media/720s_06.png, /Media/720s_07.png, /Media/720s_08.png, /Media/720s_09.png, /Media/720s_10.png, /Media/720s_11.png, /Media/720s_12.png, /Media/720s_13.png, /Media/720s_14.png, /Media/720s_15.png, /Media/720s_16.png]
+[CAROUSEL: /Media/720s_01.jpg, /Media/720s_02.jpg, /Media/720s_03.jpg, /Media/720s_04.jpg, /Media/720s_05.jpg, /Media/720s_06.jpg, /Media/720s_07.jpg, /Media/720s_08.jpg, /Media/720s_09.jpg, /Media/720s_10.jpg, /Media/720s_11.jpg, /Media/720s_12.jpg, /Media/720s_13.jpg, /Media/720s_14.jpg, /Media/720s_15.jpg, /Media/720s_16.jpg]
 
 ## Process
 

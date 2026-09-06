@@ -1,13 +1,13 @@
 ---
 name: Sabre 3
 description: A sci-fi spacecraft created in Blender with procedural textures and powerful texture maps.
-image: /Media/BlenderSpaceshipSciFiArtworkByChaimMendes.png
+image: /Media/BlenderSpaceshipSciFiArtworkByChaimMendes.jpg
 priority: 5
 ---
 
 # Final Render
 
-[CAROUSEL: /Media/Saber0001.png, /Media/Saber0003.png, /Media/Saber0004.png, /Media/Saber0005.png, /Media/BlenderSpaceshipSciFiArtworkByChaimMendes.png]
+[CAROUSEL: /Media/Saber0001.jpg, /Media/Saber0003.jpg, /Media/Saber0004.jpg, /Media/Saber0005.jpg, /Media/BlenderSpaceshipSciFiArtworkByChaimMendes.jpg]
 
 ## Process
 
