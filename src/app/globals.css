@@ -58,11 +58,12 @@ nav {
   flex-direction: column;
   transition: height 0.5s ease-in-out;
   will-change: height;
-  z-index: 10;
+  z-index: 10000;
 }
 
 .navopen {
   height: 50vh;
+  min-height: 200px;
 }
 
 .navMain {
@@ -110,6 +111,7 @@ nav {
   scale: 1;
   transform: rotate(0deg);
   transition: transform 0.6s ease-in-out, scale 0.6s ease-in-out;
+  z-index: 100000;
 }
 
 .navMain .menuopen {
@@ -135,8 +137,8 @@ nav {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin-top: 20px;
+  gap: auto;
+  margin-top: 0;
 }
 
 .hiddenMenu ul li a {
@@ -147,6 +149,7 @@ nav {
   font-family: var(--font-headers);
   font-weight: 100;
   transition: all 0.5s ease-in-out;
+  z-index: 100000;
 }
 
 .hiddenMenu ul li a:hover {
@@ -199,6 +202,7 @@ footer p {
 .footerLinks {
   margin-top: 50px;
   margin-bottom: 50px;
+  z-index: 100000;
 }
 
 .footerLinks ul li a {

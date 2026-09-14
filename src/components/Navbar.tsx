@@ -17,6 +17,7 @@ export default function Navbar() {
                     <li><Link href="/" onClick={closeMenu}>Home</Link></li>
                     <li><Link href="/about" onClick={closeMenu}>About</Link></li>
                     <li><Link href="/portfolio" onClick={closeMenu}>Portfolio</Link></li>
+                    <li><Link href="/blog" onClick={closeMenu}>Blog</Link></li>
                 </ul>
             </div>
             <div className="navMain">

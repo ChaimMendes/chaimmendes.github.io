@@ -161,11 +161,11 @@
 
 @media (max-width: 768px) {
     .part2 {
-        height: 90%;
+        height: 150vh;
     }
     .part2 div {
         flex-direction: column;
-        height: 30vh;
+        height: 50vh;
     }
     .part2 div div {
         width: 100%;

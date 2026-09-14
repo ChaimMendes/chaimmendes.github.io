@@ -50,7 +50,7 @@ export default function AboutPage() {
                     </div>
                     <div style={{ backgroundImage: "url('/Media/MarsMissions/Voyager.jpg')" }}>
                         <h3>and the</h3>
-                        <h2>VOYAGER</h2>
+                        <h2>VOYAGE</h2>
                         <p className={styles["missionLabel"]}>The Furthest We Ever Went</p>
                     </div>
 
