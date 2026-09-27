@@ -167,6 +167,9 @@
 .BackLink {
     display: inline-block;
     color: var(--green);
+    background: #00000080;
+    border-radius: 16px;
+    border: 1px solid var(--green);
     text-decoration: none;
     font-family: var(--font-code);
     margin-bottom: 2rem;
@@ -174,7 +177,7 @@
     z-index: 10;
     position: fixed;
     bottom: 0;
-    left: 0;
+    left: 10px;
     padding: 1rem;
 }
 
@@ -192,6 +195,22 @@
     justify-content: center;
     background-size: cover;
     background-position: center;
+}
+
+.PieceName {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    z-index: 2;
+    font-family: var(--font-headers);
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--green);
+    background: rgba(0, 0, 0, 0.559);
+    max-width: 90%;
+    border-radius: 32px 0 0 0;
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.609);
 }
 
 .PieceImage {
@@ -212,7 +231,20 @@
     font-family: var(--font-headers);
     font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: 1rem;
-    color: var(--green);
+    color: var(--purple);
+}
+
+.PieceDate{
+    font-size: 0.8rem;
+    border-bottom: 1px solid #848484;
+}
+
+.MarkdownContent p {
+    font-family: var(--font-code);
+    font-size: 1rem;
+    color: rgb(216, 216, 216);
+    margin-bottom: 2rem;
+    line-height: 1.6;
 }
 
 .PieceIntro {
@@ -231,15 +263,15 @@
 
 .MarkdownContent h2 {
     font-family: var(--font-headers);
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    color: #FFF;
+    font-size: clamp(1.2rem, 3vw, 3rem);
+    color: var(--purple);
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
 
 .MarkdownContent h3 {
     font-family: var(--font-headers);
-    font-size: clamp(1.2rem, 3vw, 3rem);
+    font-size: clamp(1.2rem, 2vw, 2rem);
     color: var(--green);
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;

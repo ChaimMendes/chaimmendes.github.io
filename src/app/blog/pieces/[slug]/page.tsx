@@ -1,4 +1,4 @@
-import { getPortfolioPieces } from '@/lib/parsePortfolioPieces';
+import { getBlogPieces } from '@/lib/parseBlogPieces';
 import styles from '../../page.module.css';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -35,7 +35,7 @@ function parseAndRenderContent(content: string) {
           <ImageCarousel
             key={`carousel-${i}`}
             images={images}
-            alt="Portfolio image"
+            alt="Blog image"
           />
         );
         i++;
@@ -111,7 +111,7 @@ function parseAndRenderContent(content: string) {
 export default async function PiecePage({ params }: PiecePageProps) {
   const { slug } = await params;
   
-  const pieces = await getPortfolioPieces();
+  const pieces = await getBlogPieces();
   console.log('Available pieces:', pieces.map(p => p.slug));
   console.log('Looking for slug:', slug);
   
@@ -123,16 +123,16 @@ export default async function PiecePage({ params }: PiecePageProps) {
 
   return (
     <div className={styles['PieceDetail']}>
-      <Link href="/portfolio" className={styles['BackLink']}>← Back to Portfolio</Link>
+      <Link href="/blog" className={styles['BackLink']}>← Back to Blog</Link>
       
       <div className={styles['PieceHeader']}>
         <img src={piece.image} alt={piece.name} className={styles['PieceImage']} />
+        <h1 className={styles['PieceName']}>{piece.name}</h1>
       </div>
 
       <div className={styles['PieceContent']}>
         <h1>{piece.name}</h1>
-        <p className={styles['PieceIntro']}>{piece.description}</p>
-        
+        <p className={styles['PieceDate']}>{piece.date}</p>
         <div className={styles['MarkdownContent']}>
           {parseAndRenderContent(piece.content)}
         </div>

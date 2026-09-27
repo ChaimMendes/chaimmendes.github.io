@@ -1,9 +1,9 @@
 import styles from './page.module.css';
-import { getPortfolioPieces } from '@/lib/parsePortfolioPieces';
-import PortfolioPieceCard from '@/components/PortfolioPieceCard';
+import { getBlogPieces } from '@/lib/parseBlogPieces';
+import BlogPieceCard from '@/components/BlogPieceCard';
 
-export default async function Portfolio() {
-    const pieces = await getPortfolioPieces();
+export default async function Blog() {
+    const pieces = await getBlogPieces();
 
     return (
         <>
@@ -14,11 +14,11 @@ export default async function Portfolio() {
                     <h3>of <b>Stuff(ing)</b></h3>
                 </div>
             </div>
-            <div className={styles["Portfolio"]}>
+            <div className={styles["Blog"]}>
                 <h1>Blog</h1>
                 <div className={styles["Pieces"]}>
                     {pieces.map((piece) => (
-                        <PortfolioPieceCard key={piece.slug} piece={piece} />
+                        <BlogPieceCard key={piece.slug} piece={piece} />
                     ))}
                 </div>
             </div>
