@@ -11,16 +11,13 @@ interface BlogPieceCardProps {
 export default function BlogPieceCard({ piece }: BlogPieceCardProps) {
   return (
     <Link href={`/blog/pieces/${piece.slug}`}>
-      <div 
-        className={styles["PieceCard"]}
-        style={{ backgroundImage: `url(${piece.image})` }}
-      >
-        <div className={styles["PieceName"]}>
-          <h3>{piece.name}</h3>
-        </div>
-        <div className={styles["PieceDescription"]}>
+      <div className={styles["PieceCard"]}>
+        <div className={styles["PieceCardContent"]}>
+          <h1>{piece.name}</h1>
+          <p>{piece.date}</p>
           <p>{piece.description}</p>
         </div>
+        <div className={styles["PieceCardImage"]} style={{ backgroundImage: `url(${piece.image})` }} />
       </div>
     </Link>
   );

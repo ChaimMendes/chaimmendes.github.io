@@ -8,7 +8,7 @@ export default async function Blog() {
     return (
         <>
             <div className={styles["Landing"]}>
-                <video src="/Media/blogvideo.mp4" autoPlay loop muted></video>
+                <img src="/Media/Moon.jpg" alt="Landing Image" />
                 <div className={styles["videoOverlay"]}>
                     <h3>The <b>Blog.</b></h3>
                     <h3>of <b>Stuff(ing)</b></h3>
