@@ -1,92 +1,84 @@
-.Landing{
-    position: relative;
+.Landing {
+    height: 150vh;
+    display: block;
+}
+
+.Img {
+    background-image: url('/Media/Moon.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
     height: 100vh;
-    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    position: sticky;
+    top: 0;
 }
 
-.Landing img{
+.triangle {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 50vh;
+    clip-path: polygon(100% 0%, 0% 50%, 0% 100%, 100% 100%);
+    background-color: var(--purple);
+    display: block;
 }
 
-.videoOverlay{
-    position: absolute;
+.triangle h1 {
+    color: white;
+    position: fixed;
     bottom: 0;
     right: 0;
-    width: 100%;
-    height: 50%;
-    display: flex;
-    align-items: end;
-    justify-content: end;
-    flex-direction: column;
-    margin: 2vw;
-    font-size: clamp(3rem, 7vw, 7rem);
-    font-family: var(--font-code);
-}
-.videoOverlay > *{
-    max-width: 80%;
-    text-overflow: wrap;
-    text-align: right;
-}
-.videoOverlay b{
     font-family: var(--font-headers);
+    font-size: clamp(15vw, 15vh, 15vh);
 }
-.Blog{
-    border-radius: 80px 80px 0 0;
-    position: relative;
+
+.spotlight {
     display: block;
-    width: 100%;
-    min-height: 100vh;
-    background-image: linear-gradient(to bottom, var(--bg-dark), var(--bg-black));
-}
-
-.Blog h1{
-    font-family: var(--font-headers);
-    font-size: clamp(2rem, 5vw, 5rem);
-    text-align: center;
-    margin: 2vw;
-    padding: 100px 10px;
-}
-
-/* Portfolio Basic Cards ----------------------------------- */
-.PieceCard {
-    width: 90%;
-    margin: auto;
-    display: flex;
-}
-
-.PieceCardContent{
     position: relative;
-    width: 80%;
-}
-
-.PieceCardContent * {
-    font-family: var(--font-code);
-    color: #d8d8d8;
-    text-align: justify;
-    font-size: 0.8rem;
-}
-
-.PieceCardContent h1 {
-    font-family: var(--font-headers);
-    font-size: 1rem;
-    text-align: justify;
+    height: 230vh;
     margin: 0;
     padding: 0;
-    color: var(--green);
+    background-color: var(--color-purple);
+
 }
 
-.PieceCardImage{
-    width: 20%;
-    height: 200px;
+.science, .space {
     background-position: center;
-    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: auto;
+    transform: scale(1);
+    filter: brightness(100%);
+    box-shadow: #00000056 20px 20px 20px 30px;
+    animation: shrink-box forwards linear;
+    animation-timeline: scroll();
+    animation-range: 150vh 250vh;
 }
+.space {
+    animation-range: 280vh 380vh;
+}
+
+@keyframes shrink-box {
+    from {
+        transform: scale(1);
+        filter: brightness(100%);
+        box-shadow: #00000056 20px 20px 20px 30px;
+    }
+
+    to {
+        transform: scale(0.5);
+        filter: brightness(10%);
+        box-shadow: #00000056 0px 0px 10px 0px;
+    }
+}
+
 /* Piece Detail Page ------------------------------------------- */
 .PieceDetail {
     color: white;
@@ -163,7 +155,7 @@
     color: var(--purple);
 }
 
-.PieceDate{
+.PieceDate {
     font-size: 0.8rem;
     border-bottom: 1px solid #848484;
 }

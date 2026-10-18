@@ -13,7 +13,13 @@
   /* Text Colors */
   --white: #FFFFFF;
 }
-
+ 
+@theme inline {
+  --font-main: var(--font-code);
+  --font-titles: var(--font-headers);
+  --color-purple: var(--purple);
+  --color-green: var(--green);
+}
 
 html {
   margin: 0;

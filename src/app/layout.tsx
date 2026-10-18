@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fira_Code, Major_Mono_Display, Lexend_Deca } from "next/font/google";
+import { Fira_Code, Major_Mono_Display} from "next/font/google";
 import "./globals.css";
 // Import Navabar and Footer
 import Navbar from "@/components/Navbar";
@@ -18,11 +18,6 @@ const majorMonoDisplay = Major_Mono_Display({
   weight: "400",
 });
 
-const lexendDeca = Lexend_Deca({
-  variable: "--font-main",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
   title: "Chaim Mendes | 3D Artist & Web Developer",
   description: "Chaim Mendes's personal website showcasing his work as a 3D artist and web developer.",
@@ -31,7 +26,7 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   verification: {
-    google: 'qN9blXpCI6P2Dn-cYGOEh9x4SDOgJCK9CZGxp20P5R8', // Just the code from inside the quotes
+    google: 'qN9blXpCI6P2Dn-cYGOEh9x4SDOgJCK9CZGxp20P5R8',
   },
 };
 
@@ -42,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lexendDeca.variable} ${majorMonoDisplay.variable} ${firaCode.variable} antialiased`}>
+      <body className={`${majorMonoDisplay.variable} ${firaCode.variable} antialiased`}>
         <LenisScroll />
         {/* Navagation bar and header */}
         <Navbar />
