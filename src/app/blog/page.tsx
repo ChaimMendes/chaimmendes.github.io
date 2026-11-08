@@ -8,9 +8,9 @@ export default async function Blog() {
     const SciencePost2 = pieces.find((piece) => piece.slug === 'supersonic-flight');
     const SciencePost3 = pieces.find((piece) => piece.slug === 'why-we-need-nuclear-propulsion');
 
-    const TechPost1 = pieces.find((piece) => piece.slug === 'why-we-need-nancy-grace');
-    const TechPost2 = pieces.find((piece) => piece.slug === 'supersonic-flight');
-    const TechPost3 = pieces.find((piece) => piece.slug === 'supersonic-flight');
+    const TechPost1 = pieces.find((piece) => piece.slug === 'fedora-is-the-best-penguin');
+    const TechPost2 = pieces.find((piece) => piece.slug === 'fedora-is-the-best-penguin');
+    const TechPost3 = pieces.find((piece) => piece.slug === 'fedora-is-the-best-penguin');
 
     return (
         <>

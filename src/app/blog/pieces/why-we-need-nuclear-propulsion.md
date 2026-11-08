@@ -14,7 +14,7 @@ Strapping nuclear power to a rocket is terrifying for some people. What if it â€
 
 Nuclear propulsion is not (mostly) a nuclear bomb-based engine. Conventionally, nuclear propulsion is simply electric propulsion without solar panels. Ionic thrusters shoot out heavy gases, like krypton ions, at immense speeds using electric fields. This electric field is made from power from solar panels. The only difference against any other satellite is that solar is replaced by radioactive isotopes that slowly release energy over 20-30 years. 
 
-### It's not going to explode.
+## It's not going to explode.
 
 <img src="/Media/blog/explosion.jpg" alt="explosion" />
 
@@ -22,7 +22,7 @@ Some non-scientific people believe that if the rocket blows up, it will become a
 
 Worst-case scenario, the payload explodes, and it will rain Uranium, butâ€¦. 
 
-### It won't rain uranium.
+## It won't rain uranium.
 
 Uranium in itself is not used, and the isotopes used release energy so slowly that it will only be harmful if you scavenge the crash site, find a pellet, and sleep with it in your pillow. 
 
