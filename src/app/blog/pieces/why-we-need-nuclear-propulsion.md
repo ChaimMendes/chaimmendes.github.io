@@ -3,7 +3,7 @@ name: Why we need nuclear propulsion.
 description: The aerospace community, wants to give you a supersonic jet. But we can't. Here is why. 
 image: /Media/blog/nuclearplant.jpg
 priority: 1
-date: 27th September, 2026
+date: 20th May, 2026
 tags:
   - Space
   - Propulsion

@@ -4,13 +4,9 @@ import BlogPieceList from '@/components/BlogPieceList';
 
 export default async function Blog() {
     const pieces = await getBlogPieces();
-    const SciencePost1 = pieces.find((piece) => piece.slug === 'supersonic-flight');
+    const SciencePost1 = pieces.find((piece) => piece.slug === 'why-we-need-nancy-grace');
     const SciencePost2 = pieces.find((piece) => piece.slug === 'supersonic-flight');
-    const SciencePost3 = pieces.find((piece) => piece.slug === 'supersonic-flight');
-
-    const SpacePost1 = pieces.find((piece) => piece.slug === 'why-we-need-nancy-grace');
-    const SpacePost2 = pieces.find((piece) => piece.slug === 'why-we-need-nuclear-propulsion');
-    const SpacePost3 = pieces.find((piece) => piece.slug === 'why-we-need-nancy-grace');
+    const SciencePost3 = pieces.find((piece) => piece.slug === 'why-we-need-nuclear-propulsion');
 
     const TechPost1 = pieces.find((piece) => piece.slug === 'why-we-need-nancy-grace');
     const TechPost2 = pieces.find((piece) => piece.slug === 'supersonic-flight');
