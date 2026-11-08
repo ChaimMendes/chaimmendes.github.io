@@ -46,9 +46,10 @@ function parseAndRenderContent(content: string) {
     // Handle HTML content (iframes, divs, etc.)
     if (line.trim().startsWith('<')) {
       let htmlContent = line;
+      const isVoidElement = /<(area|base|br|col|embed|hr|img|input|link|meta|param|source|track|wbr)\b/i.test(line);
       i++;
       // Collect consecutive HTML lines (for multi-line HTML elements like iframes)
-      while (i < lines.length && !lines[i].trim().startsWith('#') && !lines[i].trim().startsWith('[CAROUSEL:')) {
+      while (!isVoidElement && i < lines.length && !lines[i].trim().startsWith('#') && !lines[i].trim().startsWith('[CAROUSEL:')) {
         htmlContent += '\n' + lines[i];
         i++;
         // Stop if we find a closing tag that matches the opening tag

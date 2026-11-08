@@ -35,14 +35,14 @@
 .spotlight {
     display: block;
     position: relative;
-    height: 230vh;
+    height: 360vh;
     margin: 0;
     padding: 0;
     background-color: var(--color-purple);
 
 }
 
-.science, .space {
+.science, .space, .tech {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,6 +63,10 @@
 }
 .space {
     animation-range: 280vh 380vh;
+}
+
+.tech {
+    animation-range: 410vh 510vh;
 }
 
 @keyframes shrink-box {
