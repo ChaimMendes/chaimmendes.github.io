@@ -10,6 +10,7 @@ export interface BlogPiece {
   content: string;
   date?: string;
   priority?: number;
+  tags: string[];
 }
 
 export async function getBlogPieces(): Promise<BlogPiece[]> {
@@ -47,8 +48,11 @@ export async function getBlogPieces(): Promise<BlogPiece[]> {
       description: data.description || '',
       image: data.image || '/default-image.jpg',
       content: content,
-      priority: data.priority || 999,
-      date: data.date || new Date().toISOString(),
+      priority: typeof data.priority === 'number' && Number.isFinite(data.priority) ? data.priority : 999,
+      date: typeof data.date === 'string' ? data.date : new Date().toISOString(),
+      tags: Array.isArray(data.tags)
+        ? data.tags.filter((tag: unknown): tag is string => typeof tag === 'string')
+        : [],
     };
     
     console.log('Parsed piece:', piece.slug);

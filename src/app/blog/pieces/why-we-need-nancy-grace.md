@@ -4,6 +4,10 @@ description: Nancy Grace looks lame. But we REALY need it.
 image: /Media/blog/hubblespacetele.jpg
 priority: 1
 date: 14th May, 2026
+tags:
+  - Astronomy
+  - Space
+  - Telescopes
 ---
 
 We built Hubble; it worked; really well, we learned lots, but a few more pixels would help. So we built James Webb, whose extra pixels, along with Hubble's older but still state-of-the-art technology, continue to challenge classical physics and our understanding of atoms and photons. 

@@ -4,6 +4,10 @@ description: The aerospace community, wants to give you a supersonic jet. But we
 image: /Media/concorde.jpg
 priority: 1
 date: 27th September, 2026
+tags:
+  - Aerospace
+  - Aviation
+  - Science
 ---
 
 We, the aerospace community, want to give you a supersonic jet. We can make it safe, silent, economical, environmentaly sustainable and whatever else you want. But we can't and here is why. 

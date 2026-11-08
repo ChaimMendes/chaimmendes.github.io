@@ -4,6 +4,10 @@ description: The aerospace community, wants to give you a supersonic jet. But we
 image: /Media/blog/nuclearplant.jpg
 priority: 1
 date: 27th September, 2026
+tags:
+  - Space
+  - Propulsion
+  - Nuclear
 ---
 
 Strapping nuclear power to a rocket is terrifying for some people. What if it ‘goes off’ over our heads? What if it rains Uranium? Here is why we need nuclear propulsion. 
