@@ -8,8 +8,8 @@ const SCIENCE_SLUGS = [
   'why-we-need-nuclear-propulsion',
 ];
 const TECH_SLUGS = [
+  'art-craft-could-do-it',
   'fedora-is-the-best-penguin',
-  'your-second-tech-slug',   // replace with real slugs
   'your-third-tech-slug',
 ];
 
@@ -53,7 +53,7 @@ function Spotlight({ title, className, posts }: { title: string; className?: str
     >
       <div className="my-auto mx-7 inline-flex flex-col backdrop-blur-md backdrop-brightness-75 rounded-3xl">
         <h2 className="text-green font-titles text-6xl">{title}</h2>
-        <div className="flex flex-col gap-1 my-4 px-5">
+        <div className="flex flex-col gap-2 my-4 px-5">
           {posts.map((post) => (
             <a
               key={post.slug}

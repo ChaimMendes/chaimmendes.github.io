@@ -1,7 +1,7 @@
 ---
 name: Why we can't give you Supersonic Flight.
 description: The aerospace community, wants to give you a supersonic jet. But we can't. Here is why. 
-image: /Media/concorde.jpg
+image: /Media/blog/concorde.jpg
 priority: 1
 date: 27th September, 2026
 tags:
@@ -20,7 +20,7 @@ And, the 6 people in the desert also complain, so oceans(where there aren't any 
 
 Essentially, our supersonic airliners will be good for London to Miami, Singapore to Doha, Las Vegas to Japan, and other long-haul over-sea(Not over-seas, over-the-seas) trips, and it gets worse. 
 
-<img src="/Media/boomsupersonic.avif" alt="Supersonic aircraft breaking the sound barrier" />
+<img src="/Media/blog/boomsupersonic.avif" alt="Supersonic aircraft breaking the sound barrier" />
 
 ## You won't buy tickets.
 
@@ -38,6 +38,6 @@ If economy is funded by business class tickets, supersonic economy will be funde
 
 In exchange for these great advantages, engines would be more expensive, maintenance would be more frequent, and airports would need modifications.
 
-<img src="/Media/airplane.jpg" alt="Supersonic aircraft breaking the sound barrier" />
+<img src="/Media/blog/airplane.jpg" alt="Supersonic aircraft breaking the sound barrier" />
 
 We continue to thank all the brave companies that go bankrupt for us just to see if it will sell, over and again. If you interested, see this company Boom Supersonic that is giving it another shot.(Not a paid promotion, just like further reading.) <a href="https://boomsupersonic.com/">Visit Boom</a>
