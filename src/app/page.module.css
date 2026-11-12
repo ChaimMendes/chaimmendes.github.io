@@ -63,245 +63,50 @@
 }
 
 /* About section */
-.AboutContainer {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background-color: var(--bg-darker);
-  border-radius: 0 0 100px 100px;
-  overflow-x: clip;
-}
-
-.aboutcontainers {
-  width: 50%;
-  height: 50%;
-  position: absolute;
-  top: 50%;
-  padding: 10px;
-  color: #FFFFFF;
-  transform: translateY(-50%);
-  background-color: var(--bg-darker);
-}
-
-.aboutcontainers>* {
-  width: 70%;
-}
-
-.aboutcontainers.left {
-  left: 0;
-  display: flex;
-  justify-content: right;
-  align-items: baseline;
-  text-align: right;
-  font-size: 7vw;
-  font-family: var(--font-headers);
-  animation: nameAnimationleft 1s ease-in-out forwards;
+.boxy-shrink {
+  animation: scroll-and-box 1s linear both;
   animation-timeline: view();
-  animation-range: entry 30% cover 80%;
+  /* Restrict the animation to happen strictly as the element scrolls out of view */
+  animation-range: exit -50% exit 0%;
+  transform-origin: center center;
+  will-change: transform, border-radius;
 }
 
-.aboutcontainers.right {
-  right: 0;
-  display: flex;
-  justify-content: left;
-  flex-direction: column;
-  align-items: baseline;
-  text-align: left;
-  font-size: clamp(1rem, 3vw, 3vw);
-  font-family: var(--font-code);
-  animation: nameAnimationright 1s ease-in-out forwards;
-  animation-timeline: view();
-  animation-range: entry 30% cover 80%;
-}
-
-@keyframes nameAnimationleft {
+@keyframes scroll-and-box {
   0% {
-    transform: translateX(0) translateY(-50%);
+    transform: scale(.95);
+    border-radius: 0rem;
+    filter: brightness(100%);
+  }
+
+  70% {
+    filter: brightness(100%);
   }
 
   100% {
-    transform: translateX(-50%) translateY(-50%);
+    filter: brightness(0%);
+    transform: scale(0.8);
+    border-radius: 4rem;
   }
 }
 
-@keyframes nameAnimationright {
-  0% {
-    transform: translateX(0) translateY(-50%);
-  }
-
-  100% {
-    transform: translateX(50%) translateY(-50%);
-  }
-}
-
-
-.splash{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 300px;
-  font-family: var(--font-code);
-  font-size: 10vw;
-  font-weight: 300;
-  color: var(--green);
-  text-align: center;
-  transform-origin: center;
-  scale: 1;
-}
-
-
-
-/* Make the video fill the background like a cover image */
-.next-section {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--bg-black);
-  text-align: center;
-  text-overflow: wrap;
-}
-
-.next-section p {
-  font-family: var(--font-code);
-  font-weight: 100;
-  font-size: 1.5rem;
-}
-
-.next-section h2 {
-  font-family: var(--font-headers);
-  font-weight: 200;
-  font-size: clamp(2rem, 5vw, 5rem);
-}
-
-.next-section * {
-  opacity: 0.5;
-  scale: 1;
-  animation: myAnimation 1s ease-in-out forwards;
+.boxy-squash {
+  animation: squash-and-box 1s linear both;
   animation-timeline: view();
-  animation-range: entry 0% cover 50%;
+  /* Restrict the animation to happen strictly as the element scrolls out of view */
+  animation-range: exit -50% exit 0%;
+  transform-origin: center center;
+  will-change: transform, border-radius;
 }
 
-@keyframes myAnimation {
+@keyframes squash-and-box {
   0% {
-    opacity: 0;
-    scale: 0.8;
-  }
-
-  60% {
-    opacity: 0.5;
-    scale: 1;
+    transform: scale(.8);
+    border-radius: 4rem;
   }
 
   100% {
-    opacity: 1;
-    scale: 1;
+    transform: scale(1);
+    border-radius: 0rem;
   }
-}
-
-
-.green {
-  color: var(--green);
-}
-
-.purple {
-  color: var(--purple);
-}
-
-
-/* Blender section */
-.skillContainer {
-  position: relative;
-  height: 300vh;
-  /* Gives space to scroll */
-  width: 100%;
-  background-color: var(--bg-black);
-}
-
-.skillimage {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-}
-
-.skillstencil {
-  position: absolute;
-  top: 0;
-  /* Starts below the image so you scroll INTO it */
-  width: 70%;
-  height: 70vh;
-  margin: 15vh 15%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* Use 'multiply' for a black stencil cutout */
-  background-color: rgb(0, 0, 0);
-  mix-blend-mode: multiply;
-}
-
-.stencilbacker {
-  position: absolute;
-  top: 0;
-  /* Starts below the image so you scroll INTO it */
-  width: 70%;
-  height: 70vh;
-  margin: 15vh 15%;
-  background-color: #ffffff53;
-  backdrop-filter: blur(5px);
-}
-
-.skillstencil p {
-  font-family: var(--font-code);
-  font-size: 10vw;
-  font-weight: 900;
-  /* Black text + multiply blend mode = Transparent hole */
-  color: white;
-  margin: 0;
-}
-
-.skillInfo {
-  position: absolute;
-  bottom: 0;
-  background-color: var(--bg-black);
-  font-family: var(--font-code);
-  height: 100vh;
-  width: 100%;
-  font-size: Clamp(1rem, 3vw, 1.5rem);
-  padding: 10vh 10vw;
-}
-
-.skillInfo * {
-  margin: 10vh 0;
-}
-
-.skillInfo a {
-  color: var(--green);
-  text-decoration: none;
-  padding: 5px;
-  border-radius: 10px;
-  outline-style: solid;
-  outline-width: 0px;
-  outline-color: var(--purple);
-  transition: outline 0.3s ease-in-out;
-}
-
-.skillInfo a:hover {
-  outline: 6px solid var(--purple);
-}
-
-
-
-.BlenderImage {
-  background-image: url('/Media/BlenderSpaceshipSciFiArtworkByChaimMendes.jpg');
-}
-
-.WebDevImage {
-  background-image: url("/Media/IcePlanetProceduralyMadeByChaimMendes.jpg");
 }

@@ -9,7 +9,7 @@ export default function BlogPieceCard({ piece }: BlogPieceCardProps) {
   return (
     <Link
       href={`/blog/pieces/${piece.slug}`}
-      className="blog-card-reveal group flex h-full min-h-36 overflow-hidden rounded-xl border border-white/10 bg-white/[0.04] transition duration-200 hover:-translate-y-1 hover:border-green/50 hover:bg-white/[0.07] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green motion-reduce:transform-none"
+      className="blog-card-reveal group flex h-full min-h-36 overflow-hidden rounded-xl border border-white/10 bg-white/4 transition duration-200 hover:-translate-y-1 hover:border-green/50 hover:bg-white/[0.07] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green motion-reduce:transform-none"
     >
       <img
         src={piece.image}
